@@ -1,0 +1,3 @@
+= Repository for FELTOR benchmark suite
+:source-highlighter: pygments
+:toc: macro
