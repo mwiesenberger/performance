@@ -1,3 +1,15 @@
 = Repository for FELTOR benchmark suite
 :source-highlighter: pygments
 :toc: macro
+
+== Quick start
+Usable only in combination with a copy of FELTOR
+
+- copy `benchmark*.sh` files to `path/to/feltor/inc/dg`
+- copy `test_mpit.cu` file to `path/to/feltor/inc/dg` and compile with `make test_mpit`
+
+- analyse the resulting `*.csv` files with the jupyter notebooks starting `jupyter notebook`
+
+== License
+MIT License applies to the submit scripts and the jupyter notebooks
+
