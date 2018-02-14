@@ -6,7 +6,7 @@
 Usable only in combination with a copy of FELTOR
 
 - make `ping_mpit` in `path/to/feltor/inc/dg`
-- copy `benchmark*.sh` files to `path/to/feltor/inc/dg` and submit
+- copy `submit*.sh` file(s) to `path/to/feltor/inc/dg` and submit
 - analyse the resulting `*.csv` files with the jupyter notebooks starting `jupyter notebook`
 
 == License
