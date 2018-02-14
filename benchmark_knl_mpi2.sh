@@ -25,7 +25,7 @@ git rev-parse --verify HEAD
 make cluster_mpib device=knl
 #mv cluster_mpib $PROGRAM
 
-srun --mpi=pmi2 ./test_mpit
+srun --mpi=pmi2 ./ping_mpit
 
 COMMAND='srun --mpi=pmi2'
 FILE=""$FILENAME".csv"
