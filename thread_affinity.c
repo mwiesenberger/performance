@@ -45,6 +45,7 @@ int main(int argc, char **argv)
             for ( j=0; j<nthreads; j++) {
                 thread = omp_get_thread_num();
                 cpuid = sched_getcpu();
+                #pragma omp ordered
                 printf("node %s, task %d of  %d tasks, thread %d of %d threads, on cpu  %d \n",
                         &node_name[0], task, ntasks, thread, nthreads, cpuid);
             }
