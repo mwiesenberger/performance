@@ -1,0 +1,36 @@
+Marconi Skylake
+10
+r133c05s02
+Wed Feb 14 03:03:44 CET 2018
+Currently Loaded Modulefiles:
+ 1) profile/base                            
+ 2) intel/pe-xe-2017--binary                
+ 3) intelmpi/2017--binary                   
+ 4) szip/2.1--gnu--6.1.0                    
+ 5) zlib/1.2.8--gnu--6.1.0                  
+ 6) hdf5/1.8.17--intel--pe-xe-2017--binary  
+ 7) netcdf/4.4.1--intel--pe-xe-2017--binary 
+ 8) python/2.7.12                           
+ 9) mkl/2017--binary                        
+10) numpy/1.11.2--python--2.7.12            
+/var/spool/slurmd/job201789/slurm_script: line 24: git: command not found
+mpiicc -xCORE-AVX512 -mtune=skylake -O3  -Wall -std=c++11 -restrict -fp-model precise -fimf-arch-consistency=true  -x c++ -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP -qopenmp -DDG_BENCHMARK cluster_mpib.cu -o cluster_mpib -I/marconi/home/userexternal/mwiesenb/include -I/marconi/home/userexternal/mwiesenb/include  -I/cineca/prod/opt/libraries/netcdf/4.4.1/intel--pe-xe-2017--binary/include -I/cineca/prod/opt/libraries/hdf5/1.8.17/intel--pe-xe-2017--binary/include -I../../  -I../     -g
+In file included from backend/cusp_matrix_blas.cuh(14),
+                 from backend/transpose.h(3),
+                 from algorithm.h(9),
+                 from cluster_mpib.cu(8):
+backend/config.h(18): warning #1224: #warning directive: "Fast std::fma(a,b,c) not activated! Using a*b+c instead!"
+  #warning "Fast std::fma(a,b,c) not activated! Using a*b+c instead!"
+   ^
+
+
+
+Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
+
+Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
+
+srun: error: r133c05s02: tasks 0-1: Exited with exit code 1
+srun: Terminating job step 201789.0
+srun: Job 201789 step creation temporarily disabled, retrying
+srun: Step created for job 201789
+Wed Feb 14 07:06:14 CET 2018

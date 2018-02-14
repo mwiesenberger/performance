@@ -1,0 +1,22 @@
+Nvidia Tesla V100 (PSG)
+10
+hsw217
+Tue Feb 13 13:56:57 PST 2018
+Currently Loaded Modulefiles:
+  1) null                            5) gcc/5.4.0
+  2) slurm/16.05.0                   6) hwloc/1.11.4
+  3) PrgEnv/GCC+OpenMPI/2016-10-12   7) openmpi/1.10.4
+  4) cuda/8.0.44
+184d447a455450b687b7ed87771f46a30cd37297
+make: `cluster_mpib' is up to date.
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Tue Feb 13 15:59:31 PST 2018
