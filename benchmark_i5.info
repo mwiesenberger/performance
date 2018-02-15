@@ -1,0 +1,11 @@
+Intel i5-6600
+1
+matthias-MS-7980
+Wed Feb 14 22:09:48 CET 2018
+d59e86df8ab39f66277fb2fb1a3b9f6a71d5c660
+make: 'cluster_mpib' is up to date.
+node matthias-MS-7980, task   0 of   1 tasks, thread   0 of   4 threads, on cpu   0
+node matthias-MS-7980, task   0 of   1 tasks, thread   1 of   4 threads, on cpu   1
+node matthias-MS-7980, task   0 of   1 tasks, thread   2 of   4 threads, on cpu   2
+node matthias-MS-7980, task   0 of   1 tasks, thread   3 of   4 threads, on cpu   3
+Thu Feb 15 00:27:23 CET 2018
