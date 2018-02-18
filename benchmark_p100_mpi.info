@@ -1,22 +1,18 @@
 Nvidia Tesla P100 (PSG)
 10
-hsw227
-Tue Feb 13 13:56:54 PST 2018
+hsw221
+Fri Feb 16 05:11:10 PST 2018
 Currently Loaded Modulefiles:
   1) null                            5) gcc/5.4.0
   2) slurm/16.05.0                   6) hwloc/1.11.4
   3) PrgEnv/GCC+OpenMPI/2016-10-12   7) openmpi/1.10.4
   4) cuda/8.0.44
-184d447a455450b687b7ed87771f46a30cd37297
+d59e86df8ab39f66277fb2fb1a3b9f6a71d5c660
 make: `cluster_mpib' is up to date.
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Tue Feb 13 16:27:18 PST 2018
+node hsw221, task   0 of   2 tasks, GPU   0 of   4, on cpu   0
+node hsw221, task   1 of   2 tasks, GPU   1 of   4, on cpu   1
+node hsw221, task   0 of   4 tasks, GPU   0 of   4, on cpu   6
+node hsw221, task   2 of   4 tasks, GPU   2 of   4, on cpu   9
+node hsw221, task   3 of   4 tasks, GPU   3 of   4, on cpu  29
+node hsw221, task   1 of   4 tasks, GPU   1 of   4, on cpu  30
+Fri Feb 16 07:47:29 PST 2018
