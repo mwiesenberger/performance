@@ -1,7 +1,7 @@
 NVIDIA GTX 1060
-1
+10
 matthias-MS-7980
-Thu Feb 15 23:38:00 CET 2018
+Sun Feb 18 11:36:27 CET 2018
 d59e86df8ab39f66277fb2fb1a3b9f6a71d5c660
 make: 'cluster_mpib' is up to date.
 node matthias-MS-7980, task   0 of   1 tasks, GPU   0 out of   1, on cpu   0
@@ -11,4 +11,58 @@ Caught std::exception: std::bad_alloc: out of memory
 Caught std::exception: std::bad_alloc: out of memory
 Caught std::exception: std::bad_alloc: out of memory
 Caught std::exception: std::bad_alloc: out of memory
-Thu Feb 15 23:52:50 CET 2018
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Sun Feb 18 14:03:25 CET 2018
