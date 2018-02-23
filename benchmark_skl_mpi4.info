@@ -1,7 +1,7 @@
 Marconi Skylake
 10
-r149c09s01
-Wed Feb 14 03:03:44 CET 2018
+r129c05s01
+Thu Feb 22 22:32:33 CET 2018
 Currently Loaded Modulefiles:
  1) profile/base                            
  2) intel/pe-xe-2017--binary                
@@ -13,7 +13,7 @@ Currently Loaded Modulefiles:
  8) python/2.7.12                           
  9) mkl/2017--binary                        
 10) numpy/1.11.2--python--2.7.12            
-/var/spool/slurmd/job201791/slurm_script: line 24: git: command not found
+/var/spool/slurmd/job290487/slurm_script: line 24: git: command not found
 mpiicc -xCORE-AVX512 -mtune=skylake -O3  -Wall -std=c++11 -restrict -fp-model precise -fimf-arch-consistency=true  -x c++ -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP -qopenmp -DDG_BENCHMARK cluster_mpib.cu -o cluster_mpib -I/marconi/home/userexternal/mwiesenb/include -I/marconi/home/userexternal/mwiesenb/include  -I/cineca/prod/opt/libraries/netcdf/4.4.1/intel--pe-xe-2017--binary/include -I/cineca/prod/opt/libraries/hdf5/1.8.17/intel--pe-xe-2017--binary/include -I../../  -I../     -g
 In file included from backend/cusp_matrix_blas.cuh(14),
                  from backend/transpose.h(3),
@@ -23,37 +23,7 @@ backend/config.h(18): warning #1224: #warning directive: "Fast std::fma(a,b,c) n
   #warning "Fast std::fma(a,b,c) not activated! Using a*b+c instead!"
    ^
 
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-Please verify that both the operating system and the processor support Intel(R) AVX512ER and AVX512PF instructions.
-
-
-srun: error: r149c09s01: tasks 0-1: Exited with exit code 1
-srun: Terminating job step 201791.0
-srun: error: r149c09s03: tasks 4-5: Exited with exit code 1
-srun: error: r149c09s04: tasks 6-7: Exited with exit code 1
-srun: error: r149c09s02: tasks 2-3: Exited with exit code 1
-srun: Job 201791 step creation temporarily disabled, retrying
-srun: Step created for job 201791
-srun: Job 201791 step creation temporarily disabled, retrying
-srun: Step created for job 201791
-Wed Feb 14 04:20:14 CET 2018
+srun: fatal: Can not execute ./ping_mpit
+srun: Job 290487 step creation temporarily disabled, retrying
+srun: Step created for job 290487
+Thu Feb 22 23:41:27 CET 2018
