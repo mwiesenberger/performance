@@ -1,18 +1,60 @@
 Nvidia Tesla P100 (PSG)
 10
-hsw221
-Fri Feb 16 05:11:10 PST 2018
+hsw218
+Thu Feb 22 08:07:01 PST 2018
 Currently Loaded Modulefiles:
-  1) null                            5) gcc/5.4.0
-  2) slurm/16.05.0                   6) hwloc/1.11.4
-  3) PrgEnv/GCC+OpenMPI/2016-10-12   7) openmpi/1.10.4
-  4) cuda/8.0.44
-d59e86df8ab39f66277fb2fb1a3b9f6a71d5c660
+  1) slurm/16.05.0                   4) gcc/5.4.0
+  2) PrgEnv/GCC+OpenMPI/2016-10-12   5) hwloc/1.11.4
+  3) cuda/8.0.44                     6) openmpi/1.10.4
+a5c56e0c1cff9d2fdd89001bfe16899266a8d065
 make: `cluster_mpib' is up to date.
-node hsw221, task   0 of   2 tasks, GPU   0 of   4, on cpu   0
-node hsw221, task   1 of   2 tasks, GPU   1 of   4, on cpu   1
-node hsw221, task   0 of   4 tasks, GPU   0 of   4, on cpu   6
-node hsw221, task   2 of   4 tasks, GPU   2 of   4, on cpu   9
-node hsw221, task   3 of   4 tasks, GPU   3 of   4, on cpu  29
-node hsw221, task   1 of   4 tasks, GPU   1 of   4, on cpu  30
-Fri Feb 16 07:47:29 PST 2018
+node hsw218, task   0 of   2 tasks, GPU   0 out of   4, on cpu   0
+node hsw218, task   1 of   2 tasks, GPU   1 out of   4, on cpu   1
+node hsw218, task   0 of   4 tasks, GPU   0 out of   4, on cpu   2
+node hsw218, task   2 of   4 tasks, GPU   2 out of   4, on cpu   5
+node hsw218, task   3 of   4 tasks, GPU   3 out of   4, on cpu  18
+node hsw218, task   1 of   4 tasks, GPU   1 out of   4, on cpu  17
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+/cm/local/apps/slurm/var/spool/job202621/slurm_script: line 52: /cm/extra/apps/OpenMPI/1.10.4/GCC-5.4.0_CUDA-8.0_HWLoc-1.11.4/bin/mpirun: Permission denied
+Thu Feb 22 10:33:16 PST 2018
