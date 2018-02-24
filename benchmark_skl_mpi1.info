@@ -1,7 +1,7 @@
 Marconi Skylake
 10
-r129c18s04
-Thu Feb 22 22:32:32 CET 2018
+r136c12s01
+Fri Feb 23 21:39:16 CET 2018
 Currently Loaded Modulefiles:
  1) profile/base                            
  2) intel/pe-xe-2017--binary                
@@ -13,21 +13,11 @@ Currently Loaded Modulefiles:
  8) python/2.7.12                           
  9) mkl/2017--binary                        
 10) numpy/1.11.2--python--2.7.12            
-/var/spool/slurmd/job290485/slurm_script: line 24: git: command not found
-mpiicc -xCORE-AVX512 -mtune=skylake -O3  -Wall -std=c++11 -restrict -fp-model precise -fimf-arch-consistency=true  -x c++ -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP -qopenmp -DDG_BENCHMARK cluster_mpib.cu -o cluster_mpib -I/marconi/home/userexternal/mwiesenb/include -I/marconi/home/userexternal/mwiesenb/include  -I/cineca/prod/opt/libraries/netcdf/4.4.1/intel--pe-xe-2017--binary/include -I/cineca/prod/opt/libraries/hdf5/1.8.17/intel--pe-xe-2017--binary/include -I../../  -I../     -g
-In file included from backend/cusp_matrix_blas.cuh(14),
-                 from backend/transpose.h(3),
-                 from algorithm.h(9),
-                 from cluster_mpib.cu(8):
-backend/config.h(18): warning #1224: #warning directive: "Fast std::fma(a,b,c) not activated! Using a*b+c instead!"
-  #warning "Fast std::fma(a,b,c) not activated! Using a*b+c instead!"
-   ^
-
+/var/spool/slurmd/job305514/slurm_script: line 23: git: command not found
+make: `cluster_mpib' is up to date.
 srun: fatal: Can not execute ./ping_mpit
-srun: Job 290485 step creation temporarily disabled, retrying
-srun: Step created for job 290485
-srun: Job 290485 step creation temporarily disabled, retrying
-srun: Step created for job 290485
-srun: Job 290485 step creation temporarily disabled, retrying
-srun: Step created for job 290485
-Fri Feb 23 02:44:35 CET 2018
+srun: Job 305514 step creation temporarily disabled, retrying
+srun: Step created for job 305514
+srun: Job 305514 step creation temporarily disabled, retrying
+srun: Step created for job 305514
+Sat Feb 24 01:43:11 CET 2018

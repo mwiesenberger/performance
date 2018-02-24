@@ -12,7 +12,6 @@
 #SBATCH -o "benchmark_skl_mpi4.info"
 FILENAME='benchmark_skl_mpi4' # name of output file
 NAME='Marconi Skylake'
-PROGRAM='cluster_skl'
 REPETITIONS=10
 
 
@@ -23,7 +22,6 @@ date
 module list
 git rev-parse --verify HEAD
 make cluster_mpib device=skl
-#mv cluster_mpib $PROGRAM
 
 srun --mpi=pmi2 ./ping_mpit
 
@@ -33,7 +31,7 @@ echo '"npx" "npy" "npz" "procs" "threads" "n" "Nx" "Ny" "Nz" "scal" "axpby" "poi
 for ((n=0;n<$REPETITIONS;n++)); do
     for o in 2 3 4 5; do
         for N in 128 256 384 512 768 1024 1536 2048; do
-                echo "2 4 1 $o $N $N 1" | $COMMAND ./$PROGRAM >> $FILE
+            echo "2 4 1 $o $N $N 1" | $COMMAND ./cluster_mpib >> $FILE
         done
     done
 done
