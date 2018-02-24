@@ -10,9 +10,8 @@
 
 ###please specify a info file (for humans)
 #SBATCH -o "benchmark_reference.info"
-FILENAME='benchmark_reference' # name of output file
+FILENAME='reference_intel' # name of output file
 NAME='Marconi Skylake'
-PROGRAM='cluster_skl'
 REPETITIONS=1
 
 
@@ -23,7 +22,6 @@ date
 module list
 git rev-parse --verify HEAD
 make cluster_mpib device=skl
-#mv cluster_mpib $PROGRAM
 
 srun --mpi=pmi2 ./ping_mpit
 
@@ -32,8 +30,8 @@ FILE=""$FILENAME".csv"
 echo '"npx" "npy" "npz" "procs" "threads" "n" "Nx" "Ny" "Nz" "scal" "axpby" "pointwiseDot" "dot" "dx" "dy" "dz" "arakawa" "iterations" "cg" "ds" "exblas_d" "exblas_i"' > $FILE
 for ((n=0;n<$REPETITIONS;n++)); do
     for o in 2 3 4 5; do
-        for N in 128 136 256 272 384 408 512 544 768 816 1024 1088 1536 1632 2048 2176; do
-            echo "1 2 1 $o $N $N 1" | $COMMAND ./$PROGRAM >> $FILE
+        for N in 128 136 144 256 272 288 384 408 512 576 544 768 816 1024 1088 1152 1536 1632 1920 2048 2176; do
+            echo "1 2 1 $o $N $N 1" | $COMMAND ./cluster_mpib >> $FILE
         done
     done
 done
