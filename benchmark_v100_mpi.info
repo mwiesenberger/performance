@@ -1,27 +1,17 @@
 Nvidia Tesla V100 (PSG)
 10
-hsw215
-Thu Feb 22 11:11:09 PST 2018
+hsw217
+Sat Mar 10 02:04:32 PST 2018
 Currently Loaded Modulefiles:
   1) slurm/16.05.0                   4) gcc/5.4.0
   2) PrgEnv/GCC+OpenMPI/2016-10-12   5) hwloc/1.11.4
   3) cuda/8.0.44                     6) openmpi/1.10.4
-a5c56e0c1cff9d2fdd89001bfe16899266a8d065
+283521a5859e5ee484eb488b31483fdc5ec50a5a
 make: `cluster_mpib' is up to date.
-node hsw215, task   0 of   2 tasks, GPU   0 out of   4, on cpu   0
-node hsw215, task   1 of   2 tasks, GPU   1 out of   4, on cpu   1
-node hsw215, task   0 of   4 tasks, GPU   0 out of   4, on cpu   9
-node hsw215, task   1 of   4 tasks, GPU   1 out of   4, on cpu  21
-node hsw215, task   2 of   4 tasks, GPU   2 out of   4, on cpu  10
-node hsw215, task   3 of   4 tasks, GPU   3 out of   4, on cpu  22
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Caught std::exception: std::bad_alloc: out of memory
-Thu Feb 22 15:41:46 PST 2018
+node hsw217, task   0 of   2 tasks, GPU   0 out of   4, on cpu   0
+node hsw217, task   1 of   2 tasks, GPU   1 out of   4, on cpu   1
+node hsw217, task   0 of   4 tasks, GPU   0 out of   4, on cpu  11
+node hsw217, task   2 of   4 tasks, GPU   2 out of   4, on cpu   5
+node hsw217, task   3 of   4 tasks, GPU   3 out of   4, on cpu  18
+node hsw217, task   1 of   4 tasks, GPU   1 out of   4, on cpu  20
+Sat Mar 10 03:08:12 PST 2018

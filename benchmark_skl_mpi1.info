@@ -1,7 +1,7 @@
 Marconi Skylake
 10
-r129c07s03
-Sat Feb 24 13:22:20 CET 2018
+r134c11s01
+Fri Mar  9 08:47:08 CET 2018
 Currently Loaded Modulefiles:
  1) profile/base                            
  2) intel/pe-xe-2017--binary                
@@ -13,62 +13,76 @@ Currently Loaded Modulefiles:
  8) python/2.7.12                           
  9) mkl/2017--binary                        
 10) numpy/1.11.2--python--2.7.12            
-/var/spool/slurmd/job312081/slurm_script: line 23: git: command not found
+/var/spool/slurmd/job432919/slurm_script: line 23: git: command not found
 make: `cluster_mpib' is up to date.
-node r129c07s03, task   0 of   2 tasks, thread   0 of  24 threads, on cpu   0
-node r129c07s03, task   0 of   2 tasks, thread   1 of  24 threads, on cpu   1
-node r129c07s03, task   0 of   2 tasks, thread   2 of  24 threads, on cpu   2
-node r129c07s03, task   0 of   2 tasks, thread   3 of  24 threads, on cpu   3
-node r129c07s03, task   0 of   2 tasks, thread   4 of  24 threads, on cpu   4
-node r129c07s03, task   0 of   2 tasks, thread   5 of  24 threads, on cpu   5
-node r129c07s03, task   0 of   2 tasks, thread   6 of  24 threads, on cpu   6
-node r129c07s03, task   0 of   2 tasks, thread   7 of  24 threads, on cpu   7
-node r129c07s03, task   0 of   2 tasks, thread   8 of  24 threads, on cpu   8
-node r129c07s03, task   0 of   2 tasks, thread   9 of  24 threads, on cpu   9
-node r129c07s03, task   0 of   2 tasks, thread  10 of  24 threads, on cpu  10
-node r129c07s03, task   0 of   2 tasks, thread  11 of  24 threads, on cpu  11
-node r129c07s03, task   0 of   2 tasks, thread  12 of  24 threads, on cpu  12
-node r129c07s03, task   0 of   2 tasks, thread  13 of  24 threads, on cpu  13
-node r129c07s03, task   0 of   2 tasks, thread  14 of  24 threads, on cpu  14
-node r129c07s03, task   0 of   2 tasks, thread  15 of  24 threads, on cpu  15
-node r129c07s03, task   0 of   2 tasks, thread  16 of  24 threads, on cpu  16
-node r129c07s03, task   0 of   2 tasks, thread  17 of  24 threads, on cpu  17
-node r129c07s03, task   0 of   2 tasks, thread  18 of  24 threads, on cpu  18
-node r129c07s03, task   0 of   2 tasks, thread  19 of  24 threads, on cpu  19
-node r129c07s03, task   0 of   2 tasks, thread  20 of  24 threads, on cpu  20
-node r129c07s03, task   0 of   2 tasks, thread  21 of  24 threads, on cpu  21
-node r129c07s03, task   0 of   2 tasks, thread  22 of  24 threads, on cpu  22
-node r129c07s03, task   0 of   2 tasks, thread  23 of  24 threads, on cpu  23
-node r129c07s03, task   1 of   2 tasks, thread   0 of  24 threads, on cpu  24
-node r129c07s03, task   1 of   2 tasks, thread   1 of  24 threads, on cpu  25
-node r129c07s03, task   1 of   2 tasks, thread   2 of  24 threads, on cpu  26
-node r129c07s03, task   1 of   2 tasks, thread   3 of  24 threads, on cpu  27
-node r129c07s03, task   1 of   2 tasks, thread   4 of  24 threads, on cpu  28
-node r129c07s03, task   1 of   2 tasks, thread   5 of  24 threads, on cpu  29
-node r129c07s03, task   1 of   2 tasks, thread   6 of  24 threads, on cpu  30
-node r129c07s03, task   1 of   2 tasks, thread   7 of  24 threads, on cpu  31
-node r129c07s03, task   1 of   2 tasks, thread   8 of  24 threads, on cpu  32
-node r129c07s03, task   1 of   2 tasks, thread   9 of  24 threads, on cpu  33
-node r129c07s03, task   1 of   2 tasks, thread  10 of  24 threads, on cpu  34
-node r129c07s03, task   1 of   2 tasks, thread  11 of  24 threads, on cpu  35
-node r129c07s03, task   1 of   2 tasks, thread  12 of  24 threads, on cpu  36
-node r129c07s03, task   1 of   2 tasks, thread  13 of  24 threads, on cpu  37
-node r129c07s03, task   1 of   2 tasks, thread  14 of  24 threads, on cpu  38
-node r129c07s03, task   1 of   2 tasks, thread  15 of  24 threads, on cpu  39
-node r129c07s03, task   1 of   2 tasks, thread  16 of  24 threads, on cpu  40
-node r129c07s03, task   1 of   2 tasks, thread  17 of  24 threads, on cpu  41
-node r129c07s03, task   1 of   2 tasks, thread  18 of  24 threads, on cpu  42
-node r129c07s03, task   1 of   2 tasks, thread  19 of  24 threads, on cpu  43
-node r129c07s03, task   1 of   2 tasks, thread  20 of  24 threads, on cpu  44
-node r129c07s03, task   1 of   2 tasks, thread  21 of  24 threads, on cpu  45
-node r129c07s03, task   1 of   2 tasks, thread  22 of  24 threads, on cpu  46
-node r129c07s03, task   1 of   2 tasks, thread  23 of  24 threads, on cpu  47
-srun: Job 312081 step creation temporarily disabled, retrying
-srun: Step created for job 312081
-srun: Job 312081 step creation temporarily disabled, retrying
-srun: Step created for job 312081
-srun: Job 312081 step creation temporarily disabled, retrying
-srun: Step created for job 312081
-srun: Job 312081 step creation temporarily disabled, retrying
-srun: Step created for job 312081
-Sat Feb 24 17:28:26 CET 2018
+node r134c11s01, task   0 of   2 tasks, thread   0 of  24 threads, on cpu   0
+node r134c11s01, task   0 of   2 tasks, thread   1 of  24 threads, on cpu   1
+node r134c11s01, task   0 of   2 tasks, thread   2 of  24 threads, on cpu   2
+node r134c11s01, task   0 of   2 tasks, thread   3 of  24 threads, on cpu   3
+node r134c11s01, task   0 of   2 tasks, thread   4 of  24 threads, on cpu   4
+node r134c11s01, task   0 of   2 tasks, thread   5 of  24 threads, on cpu   5
+node r134c11s01, task   0 of   2 tasks, thread   6 of  24 threads, on cpu   6
+node r134c11s01, task   0 of   2 tasks, thread   7 of  24 threads, on cpu   7
+node r134c11s01, task   0 of   2 tasks, thread   8 of  24 threads, on cpu   8
+node r134c11s01, task   0 of   2 tasks, thread   9 of  24 threads, on cpu   9
+node r134c11s01, task   0 of   2 tasks, thread  10 of  24 threads, on cpu  10
+node r134c11s01, task   0 of   2 tasks, thread  11 of  24 threads, on cpu  11
+node r134c11s01, task   0 of   2 tasks, thread  12 of  24 threads, on cpu  12
+node r134c11s01, task   0 of   2 tasks, thread  13 of  24 threads, on cpu  13
+node r134c11s01, task   0 of   2 tasks, thread  14 of  24 threads, on cpu  14
+node r134c11s01, task   0 of   2 tasks, thread  15 of  24 threads, on cpu  15
+node r134c11s01, task   0 of   2 tasks, thread  16 of  24 threads, on cpu  16
+node r134c11s01, task   0 of   2 tasks, thread  17 of  24 threads, on cpu  17
+node r134c11s01, task   0 of   2 tasks, thread  18 of  24 threads, on cpu  18
+node r134c11s01, task   0 of   2 tasks, thread  19 of  24 threads, on cpu  19
+node r134c11s01, task   0 of   2 tasks, thread  20 of  24 threads, on cpu  20
+node r134c11s01, task   0 of   2 tasks, thread  21 of  24 threads, on cpu  21
+node r134c11s01, task   0 of   2 tasks, thread  22 of  24 threads, on cpu  22
+node r134c11s01, task   0 of   2 tasks, thread  23 of  24 threads, on cpu  23
+node r134c11s01, task   1 of   2 tasks, thread   0 of  24 threads, on cpu  24
+node r134c11s01, task   1 of   2 tasks, thread   1 of  24 threads, on cpu  25
+node r134c11s01, task   1 of   2 tasks, thread   2 of  24 threads, on cpu  26
+node r134c11s01, task   1 of   2 tasks, thread   3 of  24 threads, on cpu  27
+node r134c11s01, task   1 of   2 tasks, thread   4 of  24 threads, on cpu  28
+node r134c11s01, task   1 of   2 tasks, thread   5 of  24 threads, on cpu  29
+node r134c11s01, task   1 of   2 tasks, thread   6 of  24 threads, on cpu  30
+node r134c11s01, task   1 of   2 tasks, thread   7 of  24 threads, on cpu  31
+node r134c11s01, task   1 of   2 tasks, thread   8 of  24 threads, on cpu  32
+node r134c11s01, task   1 of   2 tasks, thread   9 of  24 threads, on cpu  33
+node r134c11s01, task   1 of   2 tasks, thread  10 of  24 threads, on cpu  34
+node r134c11s01, task   1 of   2 tasks, thread  11 of  24 threads, on cpu  35
+node r134c11s01, task   1 of   2 tasks, thread  12 of  24 threads, on cpu  36
+node r134c11s01, task   1 of   2 tasks, thread  13 of  24 threads, on cpu  37
+node r134c11s01, task   1 of   2 tasks, thread  14 of  24 threads, on cpu  38
+node r134c11s01, task   1 of   2 tasks, thread  15 of  24 threads, on cpu  39
+node r134c11s01, task   1 of   2 tasks, thread  16 of  24 threads, on cpu  40
+node r134c11s01, task   1 of   2 tasks, thread  17 of  24 threads, on cpu  41
+node r134c11s01, task   1 of   2 tasks, thread  18 of  24 threads, on cpu  42
+node r134c11s01, task   1 of   2 tasks, thread  19 of  24 threads, on cpu  43
+node r134c11s01, task   1 of   2 tasks, thread  20 of  24 threads, on cpu  44
+node r134c11s01, task   1 of   2 tasks, thread  21 of  24 threads, on cpu  45
+node r134c11s01, task   1 of   2 tasks, thread  22 of  24 threads, on cpu  46
+node r134c11s01, task   1 of   2 tasks, thread  23 of  24 threads, on cpu  47
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+srun: Job 432919 step creation temporarily disabled, retrying
+srun: Step created for job 432919
+Fri Mar  9 13:24:38 CET 2018
