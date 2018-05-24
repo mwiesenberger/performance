@@ -1,15 +1,22 @@
-= Repository for FELTOR benchmark suite
+= Repository for FELTOR benchmark results and analysis
 :source-highlighter: pygments
 :toc: macro
 
 == Quick start
-Usable only in combination with a copy of FELTOR
 
-- make `ping_mpit` in `path/to/feltor/inc/dg`
-- copy `submit*.sh` file(s) to `path/to/feltor/inc/dg` and submit
-- `csv` files use whitespace instead of comma as a delimiter
-- analyse the resulting `*.csv` files with the jupyter notebooks starting `jupyter notebook`
+=== Online view only
+Just click on the files with ipynb ending on github and view them in your browser.
 
-== License
+=== Notebooks only
+- install (jupyter http://jupyter.org )
+- analyse the contained `.csv` files with `jupyter notebook` and opening one of our `.ipynb` files
+
+=== Reproduce or add datafiles
+ - to reproduce or generate more data you will need a copy of FELTOR (https://github.com/feltor-dev/feltor)
+- `make ping_mpit` in `path/to/feltor/inc/dg`
+- copy `submit*.sh` file(s) from this repository to `path/to/feltor/inc/dg` and submit (will compile and execute `path/to/feltor/inc/dg/cluster_mpib`)
+- use the notebooks to analyse the results
+
+== Author and License
+Written by Matthias Wiesenberger,
 MIT License applies to the submit scripts and the jupyter notebooks
-
