@@ -1,0 +1,41 @@
+NVIDIA GTX Titan Xp
+10
+matthias-MS-7980
+Tue Aug 21 21:46:37 CEST 2018
+5ee71756da447c53c9ff11520924211ba2899ea3
+nvcc --compiler-bindir mpic++   -O3  -arch sm_50 -Xcudafe "--diag_suppress=code_is_unreachable --diag_suppress=initialization_not_reachable"  -std=c++11 -Xcompiler "-Wall -mavx -mfma"  -D_FORCE_INLINES  -D_MWAITXINTRIN_H_INCLUDED  -DDG_BENCHMARK cluster_mpib.cu -o cluster_mpib -I/home/matthias/include -I../../  -I../     -g
+backend/config.h:64:60: note: #pragma message: Cannot determine CUDA-aware MPI support!
+ #pragma message( "Cannot determine CUDA-aware MPI support!")
+                                                            ^
+node matthias-MS-7980, task   0 of   1 tasks, GPU   0 out of   1, on cpu   0
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Caught std::exception: std::bad_alloc: out of memory
+Tue Aug 21 23:52:16 CEST 2018
