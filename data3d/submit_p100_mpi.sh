@@ -30,7 +30,8 @@ for ((n=0;n<$REPETITIONS;n++)); do
     for o in 3 4; do
         for N in 32 64 128 256; do
             for Nz in 16 32 64 128; do
-                echo "1 1 1 $o $N $Nz 1" | $COMMAND >> $FILE
+                echo "1 1 1 $o $N $N $Nz" | $COMMAND >> $FILE
+            done
         done
     done
 done
@@ -42,7 +43,8 @@ done
 #    for o in 3 4; do
 #        for N in 32 64 128 256; do
 #            for Nz in 16 32 64 128; do
-#            echo "1 1 2 $o $N $Nz 1" | $COMMAND >> $FILE
+#               echo "1 1 2 $o $N $N $Nz" | $COMMAND >> $FILE
+#            done
 #        done
 #    done
 #done
@@ -54,7 +56,8 @@ done
 #    for o in 3 4; do
 #        for N in 32 64 128 256; do
 #            for Nz in 16 32 64 128; do
-#            echo "1 1 4 $o $N $Nz 1" | $COMMAND >> $FILE
+#               echo "1 1 4 $o $N $N $Nz" | $COMMAND >> $FILE
+#            done
 #        done
 #    done
 #done
@@ -66,7 +69,8 @@ done
 #    for o in 3 4; do
 #        for N in 32 64 128 256; do
 #            for Nz in 16 32 64 128; do
-#            echo "1 1 8 $o $N $Nz 1" | $COMMAND >> $FILE
+#               echo "1 1 8 $o $N $N $Nz" | $COMMAND >> $FILE
+#            done
 #        done
 #    done
 #done
