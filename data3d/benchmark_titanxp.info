@@ -1,0 +1,105 @@
+NVIDIA GTX Titan Xp
+10
+titanxp
+Tue Dec  4 13:38:06 CET 2018
+6d6ce7716127cd44a7db05984db14fa94f002cf3
+make: 'cluster_mpib' is up to date.
+node titanxp, task   0 of   1 tasks, GPU   0 out of   1, on cpu   0
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+Caught std::exception: std::bad_alloc: temporary_buffer::allocate: get_temporary_buffer failed
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+Tue Dec  4 17:08:22 CET 2018
