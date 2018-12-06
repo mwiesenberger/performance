@@ -1,0 +1,1568 @@
+Marconi KNL
+10
+r086c10s01
+Wed Dec  5 15:48:35 CET 2018
+Currently Loaded Modulefiles:
+ 1) profile/base                            
+ 2) intel/pe-xe-2017--binary                
+ 3) intelmpi/2017--binary                   
+ 4) szip/2.1--gnu--6.1.0                    
+ 5) zlib/1.2.8--gnu--6.1.0                  
+ 6) hdf5/1.8.17--intel--pe-xe-2017--binary  
+ 7) netcdf/4.4.1--intel--pe-xe-2017--binary 
+ 8) python/2.7.12                           
+ 9) mkl/2017--binary                        
+10) numpy/1.11.2--python--2.7.12            
+/var/spool/slurmd/job2975439/slurm_script: line 24: git: command not found
+make: `cluster_mpib' is up to date.
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./ping_mpit: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.0
+slurmstepd: error: *** STEP 2975439.0 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:37 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.0
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.1
+slurmstepd: error: *** STEP 2975439.1 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:38 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.1
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.2
+slurmstepd: error: *** STEP 2975439.2 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:40 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.2
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.3
+slurmstepd: error: *** STEP 2975439.3 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:41 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.3
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.4
+slurmstepd: error: *** STEP 2975439.4 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:42 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.4
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.5
+slurmstepd: error: *** STEP 2975439.5 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:43 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.5
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.6
+slurmstepd: error: *** STEP 2975439.6 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:45 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.6
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.7
+slurmstepd: error: *** STEP 2975439.7 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:46 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.7
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.8
+slurmstepd: error: *** STEP 2975439.8 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:47 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.8
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.9
+slurmstepd: error: *** STEP 2975439.9 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:48 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.9
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.10
+slurmstepd: error: *** STEP 2975439.10 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:50 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.10
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.11
+slurmstepd: error: *** STEP 2975439.11 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:51 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.11
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.12
+slurmstepd: error: *** STEP 2975439.12 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:52 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.12
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.13
+slurmstepd: error: *** STEP 2975439.13 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:53 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.13
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.14
+slurmstepd: error: *** STEP 2975439.14 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:54 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.14
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.15
+slurmstepd: error: *** STEP 2975439.15 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:56 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.15
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.16
+slurmstepd: error: *** STEP 2975439.16 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:57 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.16
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.17
+slurmstepd: error: *** STEP 2975439.17 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:58 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.17
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.18
+slurmstepd: error: *** STEP 2975439.18 ON r086c10s01 CANCELLED AT 2018-12-05T15:48:59 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.18
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.19
+slurmstepd: error: *** STEP 2975439.19 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:01 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.19
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.20
+slurmstepd: error: *** STEP 2975439.20 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:02 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.20
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.21
+slurmstepd: error: *** STEP 2975439.21 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:03 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.21
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.22
+slurmstepd: error: *** STEP 2975439.22 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:04 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.22
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.23
+slurmstepd: error: *** STEP 2975439.23 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:06 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.23
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.24
+slurmstepd: error: *** STEP 2975439.24 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:07 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.24
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.25
+slurmstepd: error: *** STEP 2975439.25 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:08 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.25
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.26
+slurmstepd: error: *** STEP 2975439.26 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:09 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.26
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.27
+slurmstepd: error: *** STEP 2975439.27 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:10 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.27
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.28
+slurmstepd: error: *** STEP 2975439.28 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:12 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.28
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.29
+slurmstepd: error: *** STEP 2975439.29 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:13 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.29
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.30
+slurmstepd: error: *** STEP 2975439.30 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:14 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.30
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.31
+slurmstepd: error: *** STEP 2975439.31 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:15 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.31
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.32
+slurmstepd: error: *** STEP 2975439.32 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:17 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.32
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.33
+slurmstepd: error: *** STEP 2975439.33 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:18 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.33
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.34
+slurmstepd: error: *** STEP 2975439.34 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:19 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.34
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.35
+slurmstepd: error: *** STEP 2975439.35 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:22 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.35
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.36
+slurmstepd: error: *** STEP 2975439.36 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:23 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.36
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.37
+slurmstepd: error: *** STEP 2975439.37 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:24 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.37
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.38
+slurmstepd: error: *** STEP 2975439.38 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:25 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.38
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.39
+slurmstepd: error: *** STEP 2975439.39 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:27 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.39
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.40
+slurmstepd: error: *** STEP 2975439.40 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:28 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.40
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.41
+slurmstepd: error: *** STEP 2975439.41 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:29 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.41
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.42
+slurmstepd: error: *** STEP 2975439.42 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:31 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.42
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.43
+slurmstepd: error: *** STEP 2975439.43 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:32 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.43
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.44
+slurmstepd: error: *** STEP 2975439.44 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:33 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.44
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.45
+slurmstepd: error: *** STEP 2975439.45 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:34 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.45
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.46
+slurmstepd: error: *** STEP 2975439.46 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:35 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.46
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.47
+slurmstepd: error: *** STEP 2975439.47 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:37 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.47
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.48
+slurmstepd: error: *** STEP 2975439.48 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:38 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.48
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.49
+slurmstepd: error: *** STEP 2975439.49 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:39 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.49
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.50
+slurmstepd: error: *** STEP 2975439.50 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:41 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.50
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.51
+slurmstepd: error: *** STEP 2975439.51 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:42 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.51
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.52
+slurmstepd: error: *** STEP 2975439.52 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:44 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.52
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.53
+slurmstepd: error: *** STEP 2975439.53 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:45 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.53
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.54
+slurmstepd: error: *** STEP 2975439.54 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:46 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.54
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.55
+slurmstepd: error: *** STEP 2975439.55 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:47 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.55
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.56
+slurmstepd: error: *** STEP 2975439.56 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:49 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.56
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.57
+slurmstepd: error: *** STEP 2975439.57 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:50 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.57
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.58
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+slurmstepd: error: *** STEP 2975439.58 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:53 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.58
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.59
+slurmstepd: error: *** STEP 2975439.59 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:54 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.59
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.60
+slurmstepd: error: *** STEP 2975439.60 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:55 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.60
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.61
+slurmstepd: error: *** STEP 2975439.61 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:57 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.61
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.62
+slurmstepd: error: *** STEP 2975439.62 ON r086c10s01 CANCELLED AT 2018-12-05T15:49:59 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.62
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.63
+slurmstepd: error: *** STEP 2975439.63 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:00 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.63
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.64
+slurmstepd: error: *** STEP 2975439.64 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:01 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.64
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.65
+slurmstepd: error: *** STEP 2975439.65 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:02 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.65
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.66
+slurmstepd: error: *** STEP 2975439.66 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:03 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.66
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.67
+slurmstepd: error: *** STEP 2975439.67 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:05 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.67
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.68
+slurmstepd: error: *** STEP 2975439.68 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:06 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.68
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.69
+slurmstepd: error: *** STEP 2975439.69 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:07 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.69
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.70
+slurmstepd: error: *** STEP 2975439.70 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:08 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.70
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.71
+slurmstepd: error: *** STEP 2975439.71 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:11 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.71
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.72
+slurmstepd: error: *** STEP 2975439.72 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:12 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.72
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.73
+slurmstepd: error: *** STEP 2975439.73 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:13 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.73
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.74
+slurmstepd: error: *** STEP 2975439.74 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:14 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.74
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.75
+slurmstepd: error: *** STEP 2975439.75 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:15 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.75
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.76
+slurmstepd: error: *** STEP 2975439.76 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:17 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.76
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.77
+slurmstepd: error: *** STEP 2975439.77 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:18 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.77
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.78
+slurmstepd: error: *** STEP 2975439.78 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:19 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.78
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.79
+slurmstepd: error: *** STEP 2975439.79 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:20 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.79
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.80
+slurmstepd: error: *** STEP 2975439.80 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:22 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.80
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.81
+slurmstepd: error: *** STEP 2975439.81 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:23 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.81
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.82
+slurmstepd: error: *** STEP 2975439.82 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:24 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.82
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.83
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: *** STEP 2975439.83 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:25 ***
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.83
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.84
+slurmstepd: error: *** STEP 2975439.84 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:26 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.84
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.85
+slurmstepd: error: *** STEP 2975439.85 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:28 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.85
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.86
+slurmstepd: error: *** STEP 2975439.86 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:29 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.86
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.87
+slurmstepd: error: *** STEP 2975439.87 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:30 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.87
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.88
+slurmstepd: error: *** STEP 2975439.88 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:32 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.88
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.89
+slurmstepd: error: *** STEP 2975439.89 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:33 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.89
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.90
+slurmstepd: error: *** STEP 2975439.90 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:34 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.90
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.91
+slurmstepd: error: *** STEP 2975439.91 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:37 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.91
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.92
+slurmstepd: error: *** STEP 2975439.92 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:40 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: Force Terminated job step 2975439.92
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.93
+slurmstepd: error: *** STEP 2975439.93 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:41 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.93
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.94
+slurmstepd: error: *** STEP 2975439.94 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:44 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: Force Terminated job step 2975439.94
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.95
+slurmstepd: error: *** STEP 2975439.95 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:46 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: Force Terminated job step 2975439.95
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.96
+slurmstepd: error: *** STEP 2975439.96 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:48 ***
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: Force Terminated job step 2975439.96
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.97
+slurmstepd: error: *** STEP 2975439.97 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:49 ***
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.97
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.98
+slurmstepd: error: *** STEP 2975439.98 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:50 ***
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: Force Terminated job step 2975439.98
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.99
+slurmstepd: error: *** STEP 2975439.99 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:51 ***
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.99
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.100
+slurmstepd: error: *** STEP 2975439.100 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:53 ***
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.100
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.101
+slurmstepd: error: *** STEP 2975439.101 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:54 ***
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: Force Terminated job step 2975439.101
+slurmstepd: error: couldn't chdir to `/marconi/home/userexternal/mwiesenb/feltor/inc/dg': Stale file handle: going to /tmp instead
+slurmstepd: error: execve(): /marconi/home/userexternal/mwiesenb/feltor/inc/dg/./cluster_mpib: Stale file handle
+slurmstepd: error: run_script_as_user: couldn't change working dir to /marconi/home/userexternal/mwiesenb/feltor/inc/dg: Stale file handle
+/bin/bash: /cineca/prod/opt/environment/module/3.2.10/none/init/bash_without_modulerc: Stale file handle
+srun: error: r086c11s04: task 3: Exited with exit code 116
+srun: Terminating job step 2975439.102
+slurmstepd: error: *** STEP 2975439.102 ON r086c10s01 CANCELLED AT 2018-12-05T15:50:55 ***
+srun: error: r086c11s01: task 2: Terminated
+srun: error: r086c17s04: task 6: Terminated
+srun: error: r087c04s02: task 7: Terminated
+srun: error: r086c17s03: task 5: Terminated
+srun: error: r086c10s04: task 1: Terminated
+srun: error: r086c12s03: task 4: Terminated
+srun: error: r086c10s01: task 0: Terminated
+srun: Force Terminated job step 2975439.102
+srun: Job 2975439 step creation temporarily disabled, retrying
+srun: Step created for job 2975439
+srun: Job 2975439 step creation temporarily disabled, retrying
+srun: Step created for job 2975439
+slurmstepd: error: *** JOB 2975439 ON r086c10s01 CANCELLED AT 2018-12-06T03:48:32 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 2975439.252 ON r086c10s01 CANCELLED AT 2018-12-06T03:48:32 DUE TO TIME LIMIT ***
