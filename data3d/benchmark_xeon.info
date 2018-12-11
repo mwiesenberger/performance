@@ -1,9 +1,9 @@
 Intel Xeon W-2133
 10
 titanxp
-Tue Dec  4 17:53:16 CET 2018
-6d6ce7716127cd44a7db05984db14fa94f002cf3
-mpic++   -O2  -Wall -std=c++11 -mavx -mfma  -x c++ -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP -fopenmp  -DDG_BENCHMARK cluster_mpib.cu -o cluster_mpib -I/home/matthias/include -I../../  -I../     -g
+Thu Dec  6 19:30:18 CET 2018
+a1b7a9b00a374ba55f9391170e6d38d4be847d88
+make: 'cluster_mpib' is up to date.
 node titanxp, task   0 of   1 tasks, thread   0 of   6 threads, on cpu   0
 node titanxp, task   0 of   1 tasks, thread   1 of   6 threads, on cpu   1
 node titanxp, task   0 of   1 tasks, thread   2 of   6 threads, on cpu   2
@@ -35,9 +35,59 @@ Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node titanxp exited on signal 9 (Killed).
+--------------------------------------------------------------------------
 Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
 Caught std::exception: std::bad_alloc
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node titanxp exited on signal 9 (Killed).
+--------------------------------------------------------------------------
 Caught std::exception: std::bad_alloc
-Wed Dec  5 03:48:57 CET 2018
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node titanxp exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node titanxp exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node titanxp exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Caught std::exception: std::bad_alloc
+Fri Dec  7 04:36:39 CET 2018
