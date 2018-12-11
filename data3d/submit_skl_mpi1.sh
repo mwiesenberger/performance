@@ -32,7 +32,7 @@ for ((n=0;n<$REPETITIONS;n++)); do
     for o in 3 4; do
         for N in 36 72 144 288; do
             for Nz in 16 32 64 128; do
-                echo "1 1 2 $o $N $N $Nz" | $COMMAND ./cluster_mpib >> $FILE
+                echo "1 2 1 $o $N $N $Nz" | $COMMAND ./cluster_mpib >> $FILE
             done
         done
     done
