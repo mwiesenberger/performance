@@ -49,7 +49,7 @@ echo '"npx" "npy" "npz" "procs" "threads" "n" "Nx" "Ny" "Nz" "scal" "axpby" "poi
 for ((n=0;n<$REPETITIONS;n++)); do
     for o in 2 3 4 5; do
         for N in 128 256 384 512 768 1024 1536 2048; do
-            echo "2 2 1 $o $N $N 1" | $COMMAND >> $FILE
+            echo "1 4 1 $o $N $N 1" | $COMMAND >> $FILE
         done
     done
 done
