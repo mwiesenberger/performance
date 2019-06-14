@@ -2,7 +2,7 @@
 
 #SBATCH -J benchmark
 #SBATCH -N 1 -n 2 -A fusio_ru3DTU_1 --gres=gpu:2 -p dvd_fua_prod
-#SBATCH --time=8:00:00
+#SBATCH --time=12:00:00
 
 ###please specify a info file (for humans)
 #SBATCH -o "benchmark_p100nv_mpi2.info"

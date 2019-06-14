@@ -1,0 +1,139 @@
+Nvidia Tesla P100 with NvLink (DAVIDE)
+10
+davide05
+Thu Jun 13 16:19:05 CEST 2019
+Currently Loaded Modulefiles:
+ 1) profile/base               5) szip/2.1.1--gnu--6.4.0    
+ 2) gnu/6.4.0                  6) hdf5/1.10.2--gnu--6.4.0   
+ 3) cuda/9.2.88                7) netcdf/4.6.1--gnu--6.4.0  
+ 4) openmpi/3.1.0--gnu--6.4.0 
+86777ae62ccfbef4c93f9ff86c3aee0a4225dca9
+make: `cluster_mpib' is up to date.
+node davide05, task   0 of  16 tasks, GPU   0 out of   4, on cpu   4
+node davide05, task   1 of  16 tasks, GPU   1 out of   4, on cpu  13
+node davide05, task   2 of  16 tasks, GPU   2 out of   4, on cpu  18
+node davide05, task   3 of  16 tasks, GPU   3 out of   4, on cpu  27
+node davide06, task   4 of  16 tasks, GPU   0 out of   4, on cpu   3
+node davide06, task   5 of  16 tasks, GPU   1 out of   4, on cpu  10
+node davide07, task   8 of  16 tasks, GPU   0 out of   4, on cpu   3
+node davide06, task   6 of  16 tasks, GPU   2 out of   4, on cpu  18
+node davide07, task   9 of  16 tasks, GPU   1 out of   4, on cpu  14
+node davide08, task  12 of  16 tasks, GPU   0 out of   4, on cpu   3
+node davide06, task   7 of  16 tasks, GPU   3 out of   4, on cpu  27
+node davide07, task  10 of  16 tasks, GPU   2 out of   4, on cpu  23
+node davide08, task  13 of  16 tasks, GPU   1 out of   4, on cpu  10
+node davide07, task  11 of  16 tasks, GPU   3 out of   4, on cpu  26
+node davide08, task  14 of  16 tasks, GPU   2 out of   4, on cpu  19
+node davide08, task  15 of  16 tasks, GPU   3 out of   4, on cpu  25
+--------------------------------------------------------------------------
+mpirun noticed that process rank 7 with PID 22572 on node davide06 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 10 with PID 53055 on node davide07 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 14 with PID 11268 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 14 with PID 14901 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 7 with PID 27083 on node davide06 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 15448 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  parallel_for failed: uncorrectable ECC error encountered
+[davide08:16473] *** Process received signal ***
+[davide08:16473] Signal: Aborted (6)
+[davide08:16473] Signal code:  (-6)
+[davide08:16473] [ 0] [0x3fff78ab0478]
+[davide08:16473] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff78201f94]
+[davide08:16473] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff7858d7a4]
+[davide08:16473] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff7858a0b4]
+[davide08:16473] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZSt9terminatev+0x20)[0x3fff7858a170]
+[davide08:16473] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xb4)[0x3fff7858a5b4]
+[davide08:16473] [ 6] ./cluster_mpib[0x1000ed78]
+[davide08:16473] [ 7] ./cluster_mpib[0x1005194c]
+[davide08:16473] [ 8] ./cluster_mpib[0x10052254]
+[davide08:16473] [ 9] ./cluster_mpib[0x10009138]
+[davide08:16473] [10] /lib64/libc.so.6(+0x25100)[0x3fff781e5100]
+[davide08:16473] [11] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff781e52f4]
+[davide08:16473] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 16473 on node davide08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 19012 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 0 on node davide05 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 19610 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  parallel_for failed: uncorrectable ECC error encountered
+[davide08:20109] *** Process received signal ***
+[davide08:20109] Signal: Aborted (6)
+[davide08:20109] Signal code:  (-6)
+[davide08:20109] [ 0] [0x3fffa4680478]
+[davide08:20109] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffa3dd1f94]
+[davide08:20109] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffa415d7a4]
+[davide08:20109] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffa415a0b4]
+[davide08:20109] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZSt9terminatev+0x20)[0x3fffa415a170]
+[davide08:20109] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xb4)[0x3fffa415a5b4]
+[davide08:20109] [ 6] ./cluster_mpib[0x1000ed78]
+[davide08:20109] [ 7] ./cluster_mpib[0x1005194c]
+[davide08:20109] [ 8] ./cluster_mpib[0x10052254]
+[davide08:20109] [ 9] ./cluster_mpib[0x10009138]
+[davide08:20109] [10] /lib64/libc.so.6(+0x25100)[0x3fffa3db5100]
+[davide08:20109] [11] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa3db52f4]
+[davide08:20109] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 20109 on node davide08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 6 with PID 35284 on node davide06 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 23436 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 23696 on node davide08 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  parallel_for failed: uncorrectable ECC error encountered
+[davide08:24626] *** Process received signal ***
+[davide08:24626] Signal: Aborted (6)
+[davide08:24626] Signal code:  (-6)
+[davide08:24626] [ 0] [0x3fff999a0478]
+[davide08:24626] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff990f1f94]
+[davide08:24626] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff9947d7a4]
+[davide08:24626] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff9947a0b4]
+[davide08:24626] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZSt9terminatev+0x20)[0x3fff9947a170]
+[davide08:24626] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xb4)[0x3fff9947a5b4]
+[davide08:24626] [ 6] ./cluster_mpib[0x1000ed78]
+[davide08:24626] [ 7] ./cluster_mpib[0x1005194c]
+[davide08:24626] [ 8] ./cluster_mpib[0x10052254]
+[davide08:24626] [ 9] ./cluster_mpib[0x10009138]
+[davide08:24626] [10] /lib64/libc.so.6(+0x25100)[0x3fff990d5100]
+[davide08:24626] [11] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff990d52f4]
+[davide08:24626] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 15 with PID 24626 on node davide08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+slurmstepd: error: *** JOB 105453 ON davide05 CANCELLED AT 2019-06-14T04:20:03 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[7620,0],0] on node davide05
+  Remote daemon: [[7620,0],3] on node davide08
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------
+slurmstepd: error: Detected 12 oom-kill event(s) in step 105453.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

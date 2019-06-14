@@ -1,0 +1,604 @@
+Nvidia Tesla P100 with NvLink (DAVIDE)
+10
+davide45
+Thu Jun 13 16:15:19 CEST 2019
+Currently Loaded Modulefiles:
+ 1) profile/base               5) szip/2.1.1--gnu--6.4.0    
+ 2) gnu/6.4.0                  6) hdf5/1.10.2--gnu--6.4.0   
+ 3) cuda/9.2.88                7) netcdf/4.6.1--gnu--6.4.0  
+ 4) openmpi/3.1.0--gnu--6.4.0 
+86777ae62ccfbef4c93f9ff86c3aee0a4225dca9
+make: `cluster_mpib' is up to date.
+node davide45, task   0 of   1 tasks, GPU   0 out of   1, on cpu  65
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:79413] *** Process received signal ***
+[davide45:79413] Signal: Aborted (6)
+[davide45:79413] Signal code:  (-6)
+[davide45:79413] [ 0] [0x3fff812d0478]
+[davide45:79413] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff80a21f94]
+[davide45:79413] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff80dad7a4]
+[davide45:79413] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff80daa0b4]
+[davide45:79413] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff80da8638]
+[davide45:79413] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff80da97a0]
+[davide45:79413] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff80bdba94]
+[davide45:79413] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff80bdc180]
+[davide45:79413] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff80daa5a0]
+[davide45:79413] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:79413] [10] ./cluster_mpib[0x1000ee44]
+[davide45:79413] [11] ./cluster_mpib[0x10059ebc]
+[davide45:79413] [12] ./cluster_mpib[0x1005a004]
+[davide45:79413] [13] ./cluster_mpib[0x1005e72c]
+[davide45:79413] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:79413] [15] /lib64/libc.so.6(+0x25100)[0x3fff80a05100]
+[davide45:79413] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff80a052f4]
+[davide45:79413] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79413 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:79624] *** Process received signal ***
+[davide45:79624] Signal: Aborted (6)
+[davide45:79624] Signal code:  (-6)
+[davide45:79624] [ 0] [0x3fffb3300478]
+[davide45:79624] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffb2a51f94]
+[davide45:79624] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffb2ddd7a4]
+[davide45:79624] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffb2dda0b4]
+[davide45:79624] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffb2dd8638]
+[davide45:79624] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffb2dd97a0]
+[davide45:79624] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffb2c0ba94]
+[davide45:79624] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffb2c0c180]
+[davide45:79624] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffb2dda5a0]
+[davide45:79624] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:79624] [10] ./cluster_mpib[0x1000ede4]
+[davide45:79624] [11] ./cluster_mpib[0x1005e424]
+[davide45:79624] [12] ./cluster_mpib[0x10009b3c]
+[davide45:79624] [13] /lib64/libc.so.6(+0x25100)[0x3fffb2a35100]
+[davide45:79624] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffb2a352f4]
+[davide45:79624] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79624 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 80732 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 80876 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:82210] *** Process received signal ***
+[davide45:82210] Signal: Aborted (6)
+[davide45:82210] Signal code:  (-6)
+[davide45:82210] [ 0] [0x3fffa32b0478]
+[davide45:82210] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffa2a01f94]
+[davide45:82210] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffa2d8d7a4]
+[davide45:82210] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffa2d8a0b4]
+[davide45:82210] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffa2d88638]
+[davide45:82210] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffa2d897a0]
+[davide45:82210] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffa2bbba94]
+[davide45:82210] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffa2bbc180]
+[davide45:82210] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffa2d8a5a0]
+[davide45:82210] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:82210] [10] ./cluster_mpib[0x1000ee44]
+[davide45:82210] [11] ./cluster_mpib[0x10059ebc]
+[davide45:82210] [12] ./cluster_mpib[0x1005a004]
+[davide45:82210] [13] ./cluster_mpib[0x1005e72c]
+[davide45:82210] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:82210] [15] /lib64/libc.so.6(+0x25100)[0x3fffa29e5100]
+[davide45:82210] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa29e52f4]
+[davide45:82210] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 82210 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:82515] *** Process received signal ***
+[davide45:82515] Signal: Aborted (6)
+[davide45:82515] Signal code:  (-6)
+[davide45:82515] [ 0] [0x3fff86b40478]
+[davide45:82515] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff86291f94]
+[davide45:82515] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff8661d7a4]
+[davide45:82515] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff8661a0b4]
+[davide45:82515] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff86618638]
+[davide45:82515] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff866197a0]
+[davide45:82515] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff8644ba94]
+[davide45:82515] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff8644c180]
+[davide45:82515] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff8661a5a0]
+[davide45:82515] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:82515] [10] ./cluster_mpib[0x1000ede4]
+[davide45:82515] [11] ./cluster_mpib[0x1005e424]
+[davide45:82515] [12] ./cluster_mpib[0x10009b3c]
+[davide45:82515] [13] /lib64/libc.so.6(+0x25100)[0x3fff86275100]
+[davide45:82515] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff862752f4]
+[davide45:82515] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 82515 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 83595 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 83742 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:85139] *** Process received signal ***
+[davide45:85139] Signal: Aborted (6)
+[davide45:85139] Signal code:  (-6)
+[davide45:85139] [ 0] [0x3fff9d2a0478]
+[davide45:85139] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff9c9f1f94]
+[davide45:85139] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff9cd7d7a4]
+[davide45:85139] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff9cd7a0b4]
+[davide45:85139] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff9cd78638]
+[davide45:85139] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff9cd797a0]
+[davide45:85139] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff9cbaba94]
+[davide45:85139] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff9cbac180]
+[davide45:85139] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff9cd7a5a0]
+[davide45:85139] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:85139] [10] ./cluster_mpib[0x1000ee44]
+[davide45:85139] [11] ./cluster_mpib[0x10059ebc]
+[davide45:85139] [12] ./cluster_mpib[0x1005a004]
+[davide45:85139] [13] ./cluster_mpib[0x1005e72c]
+[davide45:85139] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:85139] [15] /lib64/libc.so.6(+0x25100)[0x3fff9c9d5100]
+[davide45:85139] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff9c9d52f4]
+[davide45:85139] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 85139 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:85344] *** Process received signal ***
+[davide45:85344] Signal: Aborted (6)
+[davide45:85344] Signal code:  (-6)
+[davide45:85344] [ 0] [0x3fff96c50478]
+[davide45:85344] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff963a1f94]
+[davide45:85344] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff9672d7a4]
+[davide45:85344] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff9672a0b4]
+[davide45:85344] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff96728638]
+[davide45:85344] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff967297a0]
+[davide45:85344] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff9655ba94]
+[davide45:85344] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff9655c180]
+[davide45:85344] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff9672a5a0]
+[davide45:85344] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:85344] [10] ./cluster_mpib[0x1000ede4]
+[davide45:85344] [11] ./cluster_mpib[0x1005e424]
+[davide45:85344] [12] ./cluster_mpib[0x10009b3c]
+[davide45:85344] [13] /lib64/libc.so.6(+0x25100)[0x3fff96385100]
+[davide45:85344] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff963852f4]
+[davide45:85344] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 85344 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 86391 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 86552 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:87997] *** Process received signal ***
+[davide45:87997] Signal: Aborted (6)
+[davide45:87997] Signal code:  (-6)
+[davide45:87997] [ 0] [0x3fff805e0478]
+[davide45:87997] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff7fd31f94]
+[davide45:87997] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff800bd7a4]
+[davide45:87997] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff800ba0b4]
+[davide45:87997] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff800b8638]
+[davide45:87997] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff800b97a0]
+[davide45:87997] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff7feeba94]
+[davide45:87997] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff7feec180]
+[davide45:87997] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff800ba5a0]
+[davide45:87997] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:87997] [10] ./cluster_mpib[0x1000ee44]
+[davide45:87997] [11] ./cluster_mpib[0x10059ebc]
+[davide45:87997] [12] ./cluster_mpib[0x1005a004]
+[davide45:87997] [13] ./cluster_mpib[0x1005e72c]
+[davide45:87997] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:87997] [15] /lib64/libc.so.6(+0x25100)[0x3fff7fd15100]
+[davide45:87997] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff7fd152f4]
+[davide45:87997] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 87997 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:88204] *** Process received signal ***
+[davide45:88204] Signal: Aborted (6)
+[davide45:88204] Signal code:  (-6)
+[davide45:88204] [ 0] [0x3fff90c40478]
+[davide45:88204] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff90391f94]
+[davide45:88204] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff9071d7a4]
+[davide45:88204] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff9071a0b4]
+[davide45:88204] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff90718638]
+[davide45:88204] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff907197a0]
+[davide45:88204] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff9054ba94]
+[davide45:88204] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff9054c180]
+[davide45:88204] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff9071a5a0]
+[davide45:88204] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:88204] [10] ./cluster_mpib[0x1000ede4]
+[davide45:88204] [11] ./cluster_mpib[0x1005e424]
+[davide45:88204] [12] ./cluster_mpib[0x10009b3c]
+[davide45:88204] [13] /lib64/libc.so.6(+0x25100)[0x3fff90375100]
+[davide45:88204] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff903752f4]
+[davide45:88204] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 88204 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 89776 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 89920 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:91263] *** Process received signal ***
+[davide45:91263] Signal: Aborted (6)
+[davide45:91263] Signal code:  (-6)
+[davide45:91263] [ 0] [0x3fff83340478]
+[davide45:91263] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff82a91f94]
+[davide45:91263] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff82e1d7a4]
+[davide45:91263] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff82e1a0b4]
+[davide45:91263] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff82e18638]
+[davide45:91263] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff82e197a0]
+[davide45:91263] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff82c4ba94]
+[davide45:91263] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff82c4c180]
+[davide45:91263] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff82e1a5a0]
+[davide45:91263] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:91263] [10] ./cluster_mpib[0x1000ee44]
+[davide45:91263] [11] ./cluster_mpib[0x10059ebc]
+[davide45:91263] [12] ./cluster_mpib[0x1005a004]
+[davide45:91263] [13] ./cluster_mpib[0x1005e72c]
+[davide45:91263] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:91263] [15] /lib64/libc.so.6(+0x25100)[0x3fff82a75100]
+[davide45:91263] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff82a752f4]
+[davide45:91263] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 91263 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:91534] *** Process received signal ***
+[davide45:91534] Signal: Aborted (6)
+[davide45:91534] Signal code:  (-6)
+[davide45:91534] [ 0] [0x3fffa49b0478]
+[davide45:91534] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffa4101f94]
+[davide45:91534] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffa448d7a4]
+[davide45:91534] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffa448a0b4]
+[davide45:91534] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffa4488638]
+[davide45:91534] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffa44897a0]
+[davide45:91534] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffa42bba94]
+[davide45:91534] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffa42bc180]
+[davide45:91534] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffa448a5a0]
+[davide45:91534] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:91534] [10] ./cluster_mpib[0x1000ede4]
+[davide45:91534] [11] ./cluster_mpib[0x1005e424]
+[davide45:91534] [12] ./cluster_mpib[0x10009b3c]
+[davide45:91534] [13] /lib64/libc.so.6(+0x25100)[0x3fffa40e5100]
+[davide45:91534] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa40e52f4]
+[davide45:91534] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 91534 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 92583 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 92744 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:94185] *** Process received signal ***
+[davide45:94185] Signal: Aborted (6)
+[davide45:94185] Signal code:  (-6)
+[davide45:94185] [ 0] [0x3fff86f80478]
+[davide45:94185] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff866d1f94]
+[davide45:94185] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff86a5d7a4]
+[davide45:94185] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff86a5a0b4]
+[davide45:94185] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff86a58638]
+[davide45:94185] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff86a597a0]
+[davide45:94185] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff8688ba94]
+[davide45:94185] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff8688c180]
+[davide45:94185] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff86a5a5a0]
+[davide45:94185] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:94185] [10] ./cluster_mpib[0x1000ee44]
+[davide45:94185] [11] ./cluster_mpib[0x10059ebc]
+[davide45:94185] [12] ./cluster_mpib[0x1005a004]
+[davide45:94185] [13] ./cluster_mpib[0x1005e72c]
+[davide45:94185] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:94185] [15] /lib64/libc.so.6(+0x25100)[0x3fff866b5100]
+[davide45:94185] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff866b52f4]
+[davide45:94185] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 94185 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:94372] *** Process received signal ***
+[davide45:94372] Signal: Aborted (6)
+[davide45:94372] Signal code:  (-6)
+[davide45:94372] [ 0] [0x3fff879e0478]
+[davide45:94372] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff87131f94]
+[davide45:94372] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff874bd7a4]
+[davide45:94372] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff874ba0b4]
+[davide45:94372] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff874b8638]
+[davide45:94372] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff874b97a0]
+[davide45:94372] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff872eba94]
+[davide45:94372] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff872ec180]
+[davide45:94372] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff874ba5a0]
+[davide45:94372] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:94372] [10] ./cluster_mpib[0x1000ede4]
+[davide45:94372] [11] ./cluster_mpib[0x1005e424]
+[davide45:94372] [12] ./cluster_mpib[0x10009b3c]
+[davide45:94372] [13] /lib64/libc.so.6(+0x25100)[0x3fff87115100]
+[davide45:94372] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff871152f4]
+[davide45:94372] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 94372 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 95438 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 95578 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:96969] *** Process received signal ***
+[davide45:96969] Signal: Aborted (6)
+[davide45:96969] Signal code:  (-6)
+[davide45:96969] [ 0] [0x3fff87480478]
+[davide45:96969] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff86bd1f94]
+[davide45:96969] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff86f5d7a4]
+[davide45:96969] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff86f5a0b4]
+[davide45:96969] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff86f58638]
+[davide45:96969] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff86f597a0]
+[davide45:96969] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff86d8ba94]
+[davide45:96969] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff86d8c180]
+[davide45:96969] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff86f5a5a0]
+[davide45:96969] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:96969] [10] ./cluster_mpib[0x1000ee44]
+[davide45:96969] [11] ./cluster_mpib[0x10059ebc]
+[davide45:96969] [12] ./cluster_mpib[0x1005a004]
+[davide45:96969] [13] ./cluster_mpib[0x1005e72c]
+[davide45:96969] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:96969] [15] /lib64/libc.so.6(+0x25100)[0x3fff86bb5100]
+[davide45:96969] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff86bb52f4]
+[davide45:96969] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 96969 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:97180] *** Process received signal ***
+[davide45:97180] Signal: Aborted (6)
+[davide45:97180] Signal code:  (-6)
+[davide45:97180] [ 0] [0x3fff7b260478]
+[davide45:97180] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff7a9b1f94]
+[davide45:97180] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff7ad3d7a4]
+[davide45:97180] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff7ad3a0b4]
+[davide45:97180] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff7ad38638]
+[davide45:97180] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff7ad397a0]
+[davide45:97180] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff7ab6ba94]
+[davide45:97180] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff7ab6c180]
+[davide45:97180] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff7ad3a5a0]
+[davide45:97180] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:97180] [10] ./cluster_mpib[0x1000ede4]
+[davide45:97180] [11] ./cluster_mpib[0x1005e424]
+[davide45:97180] [12] ./cluster_mpib[0x10009b3c]
+[davide45:97180] [13] /lib64/libc.so.6(+0x25100)[0x3fff7a995100]
+[davide45:97180] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff7a9952f4]
+[davide45:97180] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 97180 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 98230 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 98484 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:100275] *** Process received signal ***
+[davide45:100275] Signal: Aborted (6)
+[davide45:100275] Signal code:  (-6)
+[davide45:100275] [ 0] [0x3fffa8440478]
+[davide45:100275] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffa7b91f94]
+[davide45:100275] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffa7f1d7a4]
+[davide45:100275] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffa7f1a0b4]
+[davide45:100275] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffa7f18638]
+[davide45:100275] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffa7f197a0]
+[davide45:100275] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffa7d4ba94]
+[davide45:100275] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffa7d4c180]
+[davide45:100275] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffa7f1a5a0]
+[davide45:100275] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:100275] [10] ./cluster_mpib[0x1000ee44]
+[davide45:100275] [11] ./cluster_mpib[0x10059ebc]
+[davide45:100275] [12] ./cluster_mpib[0x1005a004]
+[davide45:100275] [13] ./cluster_mpib[0x1005e72c]
+[davide45:100275] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:100275] [15] /lib64/libc.so.6(+0x25100)[0x3fffa7b75100]
+[davide45:100275] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa7b752f4]
+[davide45:100275] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 100275 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:100528] *** Process received signal ***
+[davide45:100528] Signal: Aborted (6)
+[davide45:100528] Signal code:  (-6)
+[davide45:100528] [ 0] [0x3fff81410478]
+[davide45:100528] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fff80b61f94]
+[davide45:100528] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fff80eed7a4]
+[davide45:100528] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fff80eea0b4]
+[davide45:100528] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fff80ee8638]
+[davide45:100528] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fff80ee97a0]
+[davide45:100528] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fff80d1ba94]
+[davide45:100528] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fff80d1c180]
+[davide45:100528] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fff80eea5a0]
+[davide45:100528] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:100528] [10] ./cluster_mpib[0x1000ede4]
+[davide45:100528] [11] ./cluster_mpib[0x1005e424]
+[davide45:100528] [12] ./cluster_mpib[0x10009b3c]
+[davide45:100528] [13] /lib64/libc.so.6(+0x25100)[0x3fff80b45100]
+[davide45:100528] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff80b452f4]
+[davide45:100528] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 100528 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 101592 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 101738 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:103130] *** Process received signal ***
+[davide45:103130] Signal: Aborted (6)
+[davide45:103130] Signal code:  (-6)
+[davide45:103130] [ 0] [0x3fffacb50478]
+[davide45:103130] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffac2a1f94]
+[davide45:103130] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffac62d7a4]
+[davide45:103130] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffac62a0b4]
+[davide45:103130] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffac628638]
+[davide45:103130] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffac6297a0]
+[davide45:103130] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffac45ba94]
+[davide45:103130] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffac45c180]
+[davide45:103130] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffac62a5a0]
+[davide45:103130] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:103130] [10] ./cluster_mpib[0x1000ee44]
+[davide45:103130] [11] ./cluster_mpib[0x10059ebc]
+[davide45:103130] [12] ./cluster_mpib[0x1005a004]
+[davide45:103130] [13] ./cluster_mpib[0x1005e72c]
+[davide45:103130] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:103130] [15] /lib64/libc.so.6(+0x25100)[0x3fffac285100]
+[davide45:103130] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffac2852f4]
+[davide45:103130] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 103130 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:103335] *** Process received signal ***
+[davide45:103335] Signal: Aborted (6)
+[davide45:103335] Signal code:  (-6)
+[davide45:103335] [ 0] [0x3fffa6620478]
+[davide45:103335] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffa5d71f94]
+[davide45:103335] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffa60fd7a4]
+[davide45:103335] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffa60fa0b4]
+[davide45:103335] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffa60f8638]
+[davide45:103335] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffa60f97a0]
+[davide45:103335] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffa5f2ba94]
+[davide45:103335] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffa5f2c180]
+[davide45:103335] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffa60fa5a0]
+[davide45:103335] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:103335] [10] ./cluster_mpib[0x1000ede4]
+[davide45:103335] [11] ./cluster_mpib[0x1005e424]
+[davide45:103335] [12] ./cluster_mpib[0x10009b3c]
+[davide45:103335] [13] /lib64/libc.so.6(+0x25100)[0x3fffa5d55100]
+[davide45:103335] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa5d552f4]
+[davide45:103335] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 103335 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 104442 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 104602 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:105995] *** Process received signal ***
+[davide45:105995] Signal: Aborted (6)
+[davide45:105995] Signal code:  (-6)
+[davide45:105995] [ 0] [0x3fffaebe0478]
+[davide45:105995] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffae331f94]
+[davide45:105995] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffae6bd7a4]
+[davide45:105995] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffae6ba0b4]
+[davide45:105995] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffae6b8638]
+[davide45:105995] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffae6b97a0]
+[davide45:105995] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffae4eba94]
+[davide45:105995] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffae4ec180]
+[davide45:105995] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffae6ba5a0]
+[davide45:105995] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:105995] [10] ./cluster_mpib[0x1000ee44]
+[davide45:105995] [11] ./cluster_mpib[0x10059ebc]
+[davide45:105995] [12] ./cluster_mpib[0x1005a004]
+[davide45:105995] [13] ./cluster_mpib[0x1005e72c]
+[davide45:105995] [14] ./cluster_mpib[0x1000a1ec]
+[davide45:105995] [15] /lib64/libc.so.6(+0x25100)[0x3fffae315100]
+[davide45:105995] [16] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffae3152f4]
+[davide45:105995] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 105995 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[davide45:106205] *** Process received signal ***
+[davide45:106205] Signal: Aborted (6)
+[davide45:106205] Signal code:  (-6)
+[davide45:106205] [ 0] [0x3fffb6ce0478]
+[davide45:106205] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x3fffb6431f94]
+[davide45:106205] [ 2] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x1f4)[0x3fffb67bd7a4]
+[davide45:106205] [ 3] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xaa0b4)[0x3fffb67ba0b4]
+[davide45:106205] [ 4] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(+0xa8638)[0x3fffb67b8638]
+[davide45:106205] [ 5] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x480)[0x3fffb67b97a0]
+[davide45:106205] [ 6] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(+0xba94)[0x3fffb65eba94]
+[davide45:106205] [ 7] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x370)[0x3fffb65ec180]
+[davide45:106205] [ 8] /cineca/prod/opt/compilers/gnu/6.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0xa0)[0x3fffb67ba5a0]
+[davide45:106205] [ 9] ./cluster_mpib[0x1000ed78]
+[davide45:106205] [10] ./cluster_mpib[0x1000ede4]
+[davide45:106205] [11] ./cluster_mpib[0x1005e424]
+[davide45:106205] [12] ./cluster_mpib[0x10009b3c]
+[davide45:106205] [13] /lib64/libc.so.6(+0x25100)[0x3fffb6415100]
+[davide45:106205] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffb64152f4]
+[davide45:106205] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 106205 on node davide45 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 107252 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 107457 on node davide45 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Thu Jun 13 21:47:31 CEST 2019
+slurmstepd: error: Detected 20 oom-kill event(s) in step 105447.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

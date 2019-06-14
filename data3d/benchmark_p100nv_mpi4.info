@@ -1,0 +1,137 @@
+Nvidia Tesla P100 with NvLink (DAVIDE)
+10
+davide44
+Thu Jun 13 16:15:23 CEST 2019
+Currently Loaded Modulefiles:
+ 1) profile/base               5) szip/2.1.1--gnu--6.4.0    
+ 2) gnu/6.4.0                  6) hdf5/1.10.2--gnu--6.4.0   
+ 3) cuda/9.2.88                7) netcdf/4.6.1--gnu--6.4.0  
+ 4) openmpi/3.1.0--gnu--6.4.0 
+86777ae62ccfbef4c93f9ff86c3aee0a4225dca9
+make: `cluster_mpib' is up to date.
+node davide44, task   0 of   4 tasks, GPU   0 out of   4, on cpu   3
+node davide44, task   1 of   4 tasks, GPU   1 out of   4, on cpu  65
+node davide44, task   2 of   4 tasks, GPU   2 out of   4, on cpu  10
+node davide44, task   3 of   4 tasks, GPU   3 out of   4, on cpu  74
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 30520 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 30831 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 31079 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 31329 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 35795 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 36126 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 36357 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 36611 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 41048 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 41301 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 41642 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 41874 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 46756 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 47024 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 47254 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 47574 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 51988 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 52314 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 52561 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 52796 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 57231 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 57543 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 57790 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 58042 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 62930 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 63195 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 63492 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 63743 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 68221 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 68484 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 68733 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 69036 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 73416 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 73744 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 73973 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 74179 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 79085 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79343 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 79639 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 79893 on node davide44 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Thu Jun 13 22:29:07 CEST 2019
+slurmstepd: error: Detected 99 oom-kill event(s) in step 105449.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

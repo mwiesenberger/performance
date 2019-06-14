@@ -1,13 +1,15 @@
 Nvidia Tesla P100 with NvLink (DAVIDE)
 10
-davide42
-Wed Mar 27 20:04:32 CET 2019
+davide45
+Thu Jun 13 13:52:47 CEST 2019
 Currently Loaded Modulefiles:
- 1) profile/base               3) cuda/9.2.88               
- 2) gnu/6.4.0                  4) openmpi/3.1.0--gnu--6.4.0 
-4d6367edbef64116029ee9dfc2f98eba748f906e
+ 1) profile/base               5) szip/2.1.1--gnu--6.4.0    
+ 2) gnu/6.4.0                  6) hdf5/1.10.2--gnu--6.4.0   
+ 3) cuda/9.2.88                7) netcdf/4.6.1--gnu--6.4.0  
+ 4) openmpi/3.1.0--gnu--6.4.0 
+86777ae62ccfbef4c93f9ff86c3aee0a4225dca9
 make: `cluster_mpib' is up to date.
-node davide42, task   0 of   1 tasks, GPU   0 out of   1, on cpu   2
+node davide45, task   0 of   1 tasks, GPU   0 out of   1, on cpu  68
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
@@ -28,4 +30,4 @@ Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argumen
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
 Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
-Wed Mar 27 22:24:32 CET 2019
+Thu Jun 13 16:12:54 CEST 2019
