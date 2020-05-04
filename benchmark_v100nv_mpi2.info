@@ -1,0 +1,14 @@
+Nvidia Tesla V100 with NvLink (M100)
+10
+r229n01
+Mon May  4 16:14:07 CEST 2020
+Currently Loaded Modulefiles:
+ 1) profile/base(default)         5) zlib/1.2.11--gnu--8.4.0   
+ 2) cuda/10.1                     6) szip/2.1.1--gnu--8.4.0    
+ 3) gnu/8.4.0(default)            7) hdf5/1.12.0--gnu--8.4.0   
+ 4) spectrum_mpi/10.3.1--binary   8) netcdf/4.7.3--gnu--8.4.0  
+/var/spool/slurmd/job40987/slurm_script: line 19: git: command not found
+make: `cluster_mpib' is up to date.
+node r229n01, task   0 of   2 tasks, GPU   0 out of   2, on cpu   3
+node r229n01, task   1 of   2 tasks, GPU   1 out of   2, on cpu   4
+Mon May  4 17:16:41 CEST 2020
