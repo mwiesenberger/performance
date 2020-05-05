@@ -1,0 +1,944 @@
+Nvidia Tesla V100 with NvLink (M100)
+10
+r232n20
+Mon May  4 18:35:36 CEST 2020
+Currently Loaded Modulefiles:
+ 1) profile/base(default)         5) zlib/1.2.11--gnu--8.4.0   
+ 2) cuda/10.1                     6) szip/2.1.1--gnu--8.4.0    
+ 3) gnu/8.4.0(default)            7) hdf5/1.12.0--gnu--8.4.0   
+ 4) spectrum_mpi/10.3.1--binary   8) netcdf/4.7.3--gnu--8.4.0  
+/var/spool/slurmd/job41352/slurm_script: line 19: git: command not found
+make: `cluster_mpib' is up to date.
+node r232n20, task   0 of   1 tasks, GPU   0 out of   1, on cpu   3
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 37204 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 37487 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 37713 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:37974] *** Process received signal ***
+[r232n20:37974] Signal: Aborted (6)
+[r232n20:37974] Signal code:  (-6)
+[r232n20:37974] [ 0] [0x2000000504d8]
+[r232n20:37974] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:37974] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:37974] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:37974] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:37974] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:37974] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:37974] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:37974] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:37974] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:37974] [10] ./cluster_mpib[0x1000f614]
+[r232n20:37974] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:37974] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:37974] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:37974] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:37974] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 37974 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 38759 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 38935 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 39389 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 39582 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 39902 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 40188 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 42165 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 42371 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 42602 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:42931] *** Process received signal ***
+[r232n20:42931] Signal: Aborted (6)
+[r232n20:42931] Signal code:  (-6)
+[r232n20:42931] [ 0] [0x2000000504d8]
+[r232n20:42931] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:42931] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:42931] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:42931] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:42931] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:42931] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:42931] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:42931] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:42931] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:42931] [10] ./cluster_mpib[0x1000f614]
+[r232n20:42931] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:42931] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:42931] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:42931] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:42931] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 42931 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 43916 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 44173 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 44355 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 44555 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 44804 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 45140 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 47051 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 47315 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 47527 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:48040] *** Process received signal ***
+[r232n20:48040] Signal: Aborted (6)
+[r232n20:48040] Signal code:  (-6)
+[r232n20:48040] [ 0] [0x2000000504d8]
+[r232n20:48040] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:48040] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:48040] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:48040] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:48040] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:48040] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:48040] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:48040] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:48040] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:48040] [10] ./cluster_mpib[0x1000f614]
+[r232n20:48040] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:48040] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:48040] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:48040] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:48040] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 48040 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 48857 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 49014 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 49192 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 49500 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 49720 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 50265 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 51957 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 52188 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 52649 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:53011] *** Process received signal ***
+[r232n20:53011] Signal: Aborted (6)
+[r232n20:53011] Signal code:  (-6)
+[r232n20:53011] [ 0] [0x2000000504d8]
+[r232n20:53011] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:53011] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:53011] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:53011] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:53011] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:53011] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:53011] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:53011] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:53011] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:53011] [10] ./cluster_mpib[0x1000f614]
+[r232n20:53011] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:53011] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:53011] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:53011] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:53011] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 53011 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 53708 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 53994 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 54154 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 54343 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 54879 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 55224 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 57099 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 57378 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 57608 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:57867] *** Process received signal ***
+[r232n20:57867] Signal: Aborted (6)
+[r232n20:57867] Signal code:  (-6)
+[r232n20:57867] [ 0] [0x2000000504d8]
+[r232n20:57867] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:57867] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:57867] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:57867] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:57867] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:57867] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:57867] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:57867] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:57867] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:57867] [10] ./cluster_mpib[0x1000f614]
+[r232n20:57867] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:57867] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:57867] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:57867] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:57867] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 57867 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 58667 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 59047 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 59290 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 59566 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 59810 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 60063 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 62046 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 62236 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 62455 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:62812] *** Process received signal ***
+[r232n20:62812] Signal: Aborted (6)
+[r232n20:62812] Signal code:  (-6)
+[r232n20:62812] [ 0] [0x2000000504d8]
+[r232n20:62812] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:62812] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:62812] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:62812] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:62812] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:62812] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:62812] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:62812] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:62812] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:62812] [10] ./cluster_mpib[0x1000f614]
+[r232n20:62812] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:62812] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:62812] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:62812] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:62812] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 62812 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 63781 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 64024 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 64237 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 64427 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 64645 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 65005 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 66881 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 67184 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 67381 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:67924] *** Process received signal ***
+[r232n20:67924] Signal: Aborted (6)
+[r232n20:67924] Signal code:  (-6)
+[r232n20:67924] [ 0] [0x2000000504d8]
+[r232n20:67924] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:67924] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:67924] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:67924] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:67924] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:67924] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:67924] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:67924] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:67924] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:67924] [10] ./cluster_mpib[0x1000f614]
+[r232n20:67924] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:67924] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:67924] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:67924] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:67924] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 67924 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 68703 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 68894 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 69079 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 69342 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 69588 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 70136 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 71832 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 72294 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 72603 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:72864] *** Process received signal ***
+[r232n20:72864] Signal: Aborted (6)
+[r232n20:72864] Signal code:  (-6)
+[r232n20:72864] [ 0] [0x2000000504d8]
+[r232n20:72864] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:72864] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:72864] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:72864] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:72864] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:72864] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:72864] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:72864] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:72864] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:72864] [10] ./cluster_mpib[0x1000f614]
+[r232n20:72864] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:72864] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:72864] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:72864] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:72864] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 72864 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 73653 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 73830 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 74015 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 74485 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 74804 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 75055 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 76923 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 77232 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 77443 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:77691] *** Process received signal ***
+[r232n20:77691] Signal: Aborted (6)
+[r232n20:77691] Signal code:  (-6)
+[r232n20:77691] [ 0] [0x2000000504d8]
+[r232n20:77691] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:77691] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:77691] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:77691] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:77691] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:77691] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:77691] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:77691] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:77691] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:77691] [10] ./cluster_mpib[0x1000f614]
+[r232n20:77691] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:77691] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:77691] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:77691] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:77691] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 77691 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 78507 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 78925 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79111 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79410 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79626 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 79919 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 81878 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 82068 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 82380 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r232n20:82663] *** Process received signal ***
+[r232n20:82663] Signal: Aborted (6)
+[r232n20:82663] Signal code:  (-6)
+[r232n20:82663] [ 0] [0x2000000504d8]
+[r232n20:82663] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r232n20:82663] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r232n20:82663] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r232n20:82663] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r232n20:82663] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r232n20:82663] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r232n20:82663] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r232n20:82663] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r232n20:82663] [ 9] ./cluster_mpib[0x1000f5b4]
+[r232n20:82663] [10] ./cluster_mpib[0x1000f614]
+[r232n20:82663] [11] ./cluster_mpib[0x1005bd98]
+[r232n20:82663] [12] ./cluster_mpib[0x10009a5c]
+[r232n20:82663] [13] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r232n20:82663] [14] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r232n20:82663] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 82663 on node r232n20 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 83699 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 83876 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 84069 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 84277 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 84590 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 84876 on node r232n20 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Caught std::exception: __copy::trivial_device_copy H->D: failed: invalid argument
+Mon May  4 22:22:25 CEST 2020
+slurmstepd: error: Detected 90 oom-kill event(s) in step 41352.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

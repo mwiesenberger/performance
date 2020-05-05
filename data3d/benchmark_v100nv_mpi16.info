@@ -1,0 +1,28 @@
+Nvidia Tesla V100 with NvLink (M100)
+10
+r229n02
+Mon May  4 18:35:42 CEST 2020
+Currently Loaded Modulefiles:
+ 1) profile/base(default)         5) zlib/1.2.11--gnu--8.4.0   
+ 2) cuda/10.1                     6) szip/2.1.1--gnu--8.4.0    
+ 3) gnu/8.4.0(default)            7) hdf5/1.12.0--gnu--8.4.0   
+ 4) spectrum_mpi/10.3.1--binary   8) netcdf/4.7.3--gnu--8.4.0  
+/var/spool/slurmd/job41354/slurm_script: line 19: git: command not found
+make: `cluster_mpib' is up to date.
+node r229n02, task   0 of  16 tasks, GPU   0 out of   4, on cpu  24
+node r229n02, task   2 of  16 tasks, GPU   2 out of   4, on cpu  27
+node r229n02, task   3 of  16 tasks, GPU   3 out of   4, on cpu 115
+node r229n02, task   1 of  16 tasks, GPU   1 out of   4, on cpu 116
+node r229n03, task   5 of  16 tasks, GPU   1 out of   4, on cpu 116
+node r229n03, task   4 of  16 tasks, GPU   0 out of   4, on cpu  27
+node r229n03, task   6 of  16 tasks, GPU   2 out of   4, on cpu  32
+node r229n03, task   7 of  16 tasks, GPU   3 out of   4, on cpu 112
+node r229n04, task   8 of  16 tasks, GPU   0 out of   4, on cpu  28
+node r229n04, task   9 of  16 tasks, GPU   1 out of   4, on cpu 116
+node r229n05, task  12 of  16 tasks, GPU   0 out of   4, on cpu  27
+node r229n04, task  10 of  16 tasks, GPU   2 out of   4, on cpu  27
+node r229n04, task  11 of  16 tasks, GPU   3 out of   4, on cpu 112
+node r229n05, task  14 of  16 tasks, GPU   2 out of   4, on cpu  28
+node r229n05, task  15 of  16 tasks, GPU   3 out of   4, on cpu 115
+node r229n05, task  13 of  16 tasks, GPU   1 out of   4, on cpu 116
+Tue May  5 00:00:28 CEST 2020

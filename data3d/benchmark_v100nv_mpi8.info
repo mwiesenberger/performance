@@ -1,0 +1,1850 @@
+Nvidia Tesla V100 with NvLink (DAVIDE)
+10
+r229n08
+Mon May  4 18:35:48 CEST 2020
+Currently Loaded Modulefiles:
+ 1) profile/base(default)         5) zlib/1.2.11--gnu--8.4.0   
+ 2) cuda/10.1                     6) szip/2.1.1--gnu--8.4.0    
+ 3) gnu/8.4.0(default)            7) hdf5/1.12.0--gnu--8.4.0   
+ 4) spectrum_mpi/10.3.1--binary   8) netcdf/4.7.3--gnu--8.4.0  
+/var/spool/slurmd/job41356/slurm_script: line 19: git: command not found
+make: `cluster_mpib' is up to date.
+node r229n08, task   0 of   8 tasks, GPU   0 out of   4, on cpu  27
+node r229n08, task   1 of   8 tasks, GPU   1 out of   4, on cpu 116
+node r229n08, task   2 of   8 tasks, GPU   2 out of   4, on cpu  28
+node r229n08, task   3 of   8 tasks, GPU   3 out of   4, on cpu 115
+node r229n09, task   4 of   8 tasks, GPU   0 out of   4, on cpu  28
+node r229n09, task   5 of   8 tasks, GPU   1 out of   4, on cpu 115
+node r229n09, task   6 of   8 tasks, GPU   2 out of   4, on cpu  27
+node r229n09, task   7 of   8 tasks, GPU   3 out of   4, on cpu 116
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:35388] *** Process received signal ***
+[r229n09:35388] Signal: Aborted (6)
+[r229n09:35388] Signal code:  (-6)
+[r229n09:35388] [ 0] [0x2000000504d8]
+[r229n09:35388] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:35388] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:35388] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:35388] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:35388] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:35388] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:35388] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:35388] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:35388] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:35388] [10] ./cluster_mpib[0x1000f674]
+[r229n09:35388] [11] ./cluster_mpib[0x10058950]
+[r229n09:35388] [12] ./cluster_mpib[0x100589d8]
+[r229n09:35388] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:35388] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:35388] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:35388] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:53313] *** Process received signal ***
+[r229n08:53313] Signal: Aborted (6)
+[r229n08:53313] Signal code:  (-6)
+[r229n08:53313] [ 0] [0x2000000504d8]
+[r229n08:53313] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:53313] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:53313] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:53313] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:53313] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:53313] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:53313] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:53313] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:53313] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:53313] [10] ./cluster_mpib[0x1000f674]
+[r229n08:53313] [11] ./cluster_mpib[0x10058950]
+[r229n08:53313] [12] ./cluster_mpib[0x100589d8]
+[r229n08:53313] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:53313] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:53313] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:53313] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:53315] *** Process received signal ***
+[r229n08:53315] Signal: Aborted (6)
+[r229n08:53315] Signal code:  (-6)
+[r229n08:53315] [ 0] [0x2000000504d8]
+[r229n08:53315] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:53315] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:53315] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:53315] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:53315] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:53315] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:53315] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:53315] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:53315] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:53315] [10] ./cluster_mpib[0x1000f674]
+[r229n08:53315] [11] ./cluster_mpib[0x10058950]
+[r229n08:53315] [12] ./cluster_mpib[0x100589d8]
+[r229n08:53315] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:53315] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:53315] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:53315] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:35387] *** Process received signal ***
+[r229n09:35387] Signal: Aborted (6)
+[r229n09:35387] Signal code:  (-6)
+[r229n09:35387] [ 0] [0x2000000504d8]
+[r229n09:35387] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:35387] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:35387] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:35387] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:35387] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:35387] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:35387] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:35387] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:35387] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:35387] [10] ./cluster_mpib[0x1000f674]
+[r229n09:35387] [11] ./cluster_mpib[0x10058950]
+[r229n09:35387] [12] ./cluster_mpib[0x100589d8]
+[r229n09:35387] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:35387] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:35387] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:35387] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:53314] *** Process received signal ***
+[r229n08:53314] Signal: Aborted (6)
+[r229n08:53314] Signal code:  (-6)
+[r229n08:53314] [ 0] [0x2000000504d8]
+[r229n08:53314] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:53314] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:53314] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:53314] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:53314] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:53314] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:53314] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:53314] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:53314] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:53314] [10] ./cluster_mpib[0x1000f674]
+[r229n08:53314] [11] ./cluster_mpib[0x10058950]
+[r229n08:53314] [12] ./cluster_mpib[0x100589d8]
+[r229n08:53314] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:53314] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:53314] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:53314] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:53312] *** Process received signal ***
+[r229n08:53312] Signal: Aborted (6)
+[r229n08:53312] Signal code:  (-6)
+[r229n08:53312] [ 0] [0x2000000504d8]
+[r229n08:53312] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:53312] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:53312] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:53312] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:53312] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:53312] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:53312] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:53312] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:53312] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:53312] [10] ./cluster_mpib[0x1000f674]
+[r229n08:53312] [11] ./cluster_mpib[0x10058950]
+[r229n08:53312] [12] ./cluster_mpib[0x100589d8]
+[r229n08:53312] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:53312] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:53312] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:53312] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:35386] *** Process received signal ***
+[r229n09:35386] Signal: Aborted (6)
+[r229n09:35386] Signal code:  (-6)
+[r229n09:35386] [ 0] [0x2000000504d8]
+[r229n09:35386] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:35386] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:35386] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:35386] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:35386] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:35386] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:35386] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:35386] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:35386] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:35386] [10] ./cluster_mpib[0x1000f674]
+[r229n09:35386] [11] ./cluster_mpib[0x10058950]
+[r229n09:35386] [12] ./cluster_mpib[0x100589d8]
+[r229n09:35386] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:35386] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:35386] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:35386] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:35389] *** Process received signal ***
+[r229n09:35389] Signal: Aborted (6)
+[r229n09:35389] Signal code:  (-6)
+[r229n09:35389] [ 0] [0x2000000504d8]
+[r229n09:35389] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:35389] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:35389] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:35389] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:35389] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:35389] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:35389] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:35389] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:35389] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:35389] [10] ./cluster_mpib[0x1000f674]
+[r229n09:35389] [11] ./cluster_mpib[0x10058950]
+[r229n09:35389] [12] ./cluster_mpib[0x100589d8]
+[r229n09:35389] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:35389] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:35389] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:35389] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:45505] *** Process received signal ***
+[r229n09:45505] Signal: Aborted (6)
+[r229n09:45505] Signal code:  (-6)
+[r229n09:45505] [ 0] [0x2000000504d8]
+[r229n09:45505] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:45505] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:45505] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:45505] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:45505] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:45505] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:45505] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:45505] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:45505] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:45505] [10] ./cluster_mpib[0x1000f674]
+[r229n09:45505] [11] ./cluster_mpib[0x10058950]
+[r229n09:45505] [12] ./cluster_mpib[0x100589d8]
+[r229n09:45505] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:45505] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:45505] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:45505] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:62956] *** Process received signal ***
+[r229n08:62956] Signal: Aborted (6)
+[r229n08:62956] Signal code:  (-6)
+[r229n08:62956] [ 0] [0x2000000504d8]
+[r229n08:62956] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:62956] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:62956] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:62956] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:62956] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:62956] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:62956] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:62956] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:62956] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:62956] [10] ./cluster_mpib[0x1000f674]
+[r229n08:62956] [11] ./cluster_mpib[0x10058950]
+[r229n08:62956] [12] ./cluster_mpib[0x100589d8]
+[r229n08:62956] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:62956] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:62956] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:62956] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:62955] *** Process received signal ***
+[r229n08:62955] Signal: Aborted (6)
+[r229n08:62955] Signal code:  (-6)
+[r229n08:62955] [ 0] [0x2000000504d8]
+[r229n08:62955] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:62955] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:62955] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:62955] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:62955] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:62955] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:62955] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:62955] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:62955] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:62955] [10] ./cluster_mpib[0x1000f674]
+[r229n08:62955] [11] ./cluster_mpib[0x10058950]
+[r229n08:62955] [12] ./cluster_mpib[0x100589d8]
+[r229n08:62955] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:62955] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:62955] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:62955] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:62958] *** Process received signal ***
+[r229n08:62958] Signal: Aborted (6)
+[r229n08:62958] Signal code:  (-6)
+[r229n08:62958] [ 0] [0x2000000504d8]
+[r229n08:62958] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:62958] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:62958] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:62958] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:62958] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:62958] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:62958] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:62958] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:62958] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:62958] [10] ./cluster_mpib[0x1000f674]
+[r229n08:62958] [11] ./cluster_mpib[0x10058950]
+[r229n08:62958] [12] ./cluster_mpib[0x100589d8]
+[r229n08:62958] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:62958] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:62958] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:62958] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:45503] *** Process received signal ***
+[r229n09:45503] Signal: Aborted (6)
+[r229n09:45503] Signal code:  (-6)
+[r229n09:45503] [ 0] [0x2000000504d8]
+[r229n09:45503] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:45503] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:45503] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:45503] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:45503] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:45503] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:45503] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:45503] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:45503] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:45503] [10] ./cluster_mpib[0x1000f674]
+[r229n09:45503] [11] ./cluster_mpib[0x10058950]
+[r229n09:45503] [12] ./cluster_mpib[0x100589d8]
+[r229n09:45503] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:45503] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:45503] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:45503] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:62957] *** Process received signal ***
+[r229n08:62957] Signal: Aborted (6)
+[r229n08:62957] Signal code:  (-6)
+[r229n08:62957] [ 0] [0x2000000504d8]
+[r229n08:62957] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:62957] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:62957] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:62957] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:62957] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:62957] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:62957] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:62957] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:62957] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:62957] [10] ./cluster_mpib[0x1000f674]
+[r229n08:62957] [11] ./cluster_mpib[0x10058950]
+[r229n08:62957] [12] ./cluster_mpib[0x100589d8]
+[r229n08:62957] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:62957] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:62957] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:62957] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:45502] *** Process received signal ***
+[r229n09:45502] Signal: Aborted (6)
+[r229n09:45502] Signal code:  (-6)
+[r229n09:45502] [ 0] [0x2000000504d8]
+[r229n09:45502] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:45502] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:45502] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:45502] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:45502] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:45502] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:45502] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:45502] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:45502] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:45502] [10] ./cluster_mpib[0x1000f674]
+[r229n09:45502] [11] ./cluster_mpib[0x10058950]
+[r229n09:45502] [12] ./cluster_mpib[0x100589d8]
+[r229n09:45502] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:45502] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:45502] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:45502] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:45504] *** Process received signal ***
+[r229n09:45504] Signal: Aborted (6)
+[r229n09:45504] Signal code:  (-6)
+[r229n09:45504] [ 0] [0x2000000504d8]
+[r229n09:45504] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:45504] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:45504] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:45504] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:45504] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:45504] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:45504] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:45504] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:45504] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:45504] [10] ./cluster_mpib[0x1000f674]
+[r229n09:45504] [11] ./cluster_mpib[0x10058950]
+[r229n09:45504] [12] ./cluster_mpib[0x100589d8]
+[r229n09:45504] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:45504] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:45504] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:45504] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:72662] *** Process received signal ***
+[r229n08:72662] Signal: Aborted (6)
+[r229n08:72662] Signal code:  (-6)
+[r229n08:72662] [ 0] [0x2000000504d8]
+[r229n08:72662] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:72662] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:72662] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:72662] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:72662] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:72662] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:72662] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:72662] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:72662] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:72662] [10] ./cluster_mpib[0x1000f674]
+[r229n08:72662] [11] ./cluster_mpib[0x10058950]
+[r229n08:72662] [12] ./cluster_mpib[0x100589d8]
+[r229n08:72662] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:72662] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:72662] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:72662] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:55507] *** Process received signal ***
+[r229n09:55507] Signal: Aborted (6)
+[r229n09:55507] Signal code:  (-6)
+[r229n09:55507] [ 0] [0x2000000504d8]
+[r229n09:55507] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:55507] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:55507] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:55507] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:55507] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:55507] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:55507] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:55507] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:55507] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:55507] [10] ./cluster_mpib[0x1000f674]
+[r229n09:55507] [11] ./cluster_mpib[0x10058950]
+[r229n09:55507] [12] ./cluster_mpib[0x100589d8]
+[r229n09:55507] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:55507] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:55507] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:55507] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:72663] *** Process received signal ***
+[r229n08:72663] Signal: Aborted (6)
+[r229n08:72663] Signal code:  (-6)
+[r229n08:72663] [ 0] [0x2000000504d8]
+[r229n08:72663] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:72663] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:72663] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:72663] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:72663] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:72663] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:72663] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:72663] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:72663] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:72663] [10] ./cluster_mpib[0x1000f674]
+[r229n08:72663] [11] ./cluster_mpib[0x10058950]
+[r229n08:72663] [12] ./cluster_mpib[0x100589d8]
+[r229n08:72663] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:72663] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:72663] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:72663] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:72660] *** Process received signal ***
+[r229n08:72660] Signal: Aborted (6)
+[r229n08:72660] Signal code:  (-6)
+[r229n08:72660] [ 0] [0x2000000504d8]
+[r229n08:72660] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:72660] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:72660] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:72660] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:72660] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:72660] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:72660] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:72660] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:72660] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:72660] [10] ./cluster_mpib[0x1000f674]
+[r229n08:72660] [11] ./cluster_mpib[0x10058950]
+[r229n08:72660] [12] ./cluster_mpib[0x100589d8]
+[r229n08:72660] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:72660] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:72660] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:72660] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:72661] *** Process received signal ***
+[r229n08:72661] Signal: Aborted (6)
+[r229n08:72661] Signal code:  (-6)
+[r229n08:72661] [ 0] [0x2000000504d8]
+[r229n08:72661] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:72661] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:72661] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:72661] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:72661] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:72661] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:72661] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:72661] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:72661] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:72661] [10] ./cluster_mpib[0x1000f674]
+[r229n08:72661] [11] ./cluster_mpib[0x10058950]
+[r229n08:72661] [12] ./cluster_mpib[0x100589d8]
+[r229n08:72661] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:72661] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:72661] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:72661] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:55505] *** Process received signal ***
+[r229n09:55505] Signal: Aborted (6)
+[r229n09:55505] Signal code:  (-6)
+[r229n09:55505] [ 0] [0x2000000504d8]
+[r229n09:55505] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:55505] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:55505] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:55505] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:55505] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:55505] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:55505] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:55505] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:55505] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:55505] [10] ./cluster_mpib[0x1000f674]
+[r229n09:55505] [11] ./cluster_mpib[0x10058950]
+[r229n09:55505] [12] ./cluster_mpib[0x100589d8]
+[r229n09:55505] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:55505] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:55505] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:55505] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:55508] *** Process received signal ***
+[r229n09:55508] Signal: Aborted (6)
+[r229n09:55508] Signal code:  (-6)
+[r229n09:55508] [ 0] [0x2000000504d8]
+[r229n09:55508] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:55508] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:55508] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:55508] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:55508] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:55508] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:55508] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:55508] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:55508] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:55508] [10] ./cluster_mpib[0x1000f674]
+[r229n09:55508] [11] ./cluster_mpib[0x10058950]
+[r229n09:55508] [12] ./cluster_mpib[0x100589d8]
+[r229n09:55508] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:55508] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:55508] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:55508] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:55506] *** Process received signal ***
+[r229n09:55506] Signal: Aborted (6)
+[r229n09:55506] Signal code:  (-6)
+[r229n09:55506] [ 0] [0x2000000504d8]
+[r229n09:55506] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:55506] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:55506] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:55506] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:55506] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:55506] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:55506] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:55506] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:55506] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:55506] [10] ./cluster_mpib[0x1000f674]
+[r229n09:55506] [11] ./cluster_mpib[0x10058950]
+[r229n09:55506] [12] ./cluster_mpib[0x100589d8]
+[r229n09:55506] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:55506] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:55506] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:55506] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:82141] *** Process received signal ***
+[r229n08:82141] Signal: Aborted (6)
+[r229n08:82141] Signal code:  (-6)
+[r229n08:82141] [ 0] [0x2000000504d8]
+[r229n08:82141] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:82141] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:82141] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:82141] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:82141] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:82141] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:82141] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:82141] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:82141] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:82141] [10] ./cluster_mpib[0x1000f674]
+[r229n08:82141] [11] ./cluster_mpib[0x10058950]
+[r229n08:82141] [12] ./cluster_mpib[0x100589d8]
+[r229n08:82141] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:82141] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:82141] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:82141] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:65374] *** Process received signal ***
+[r229n09:65374] Signal: Aborted (6)
+[r229n09:65374] Signal code:  (-6)
+[r229n09:65374] [ 0] [0x2000000504d8]
+[r229n09:65374] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:65374] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:65374] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:65374] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:65374] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:65374] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:65374] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:65374] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:65374] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:65374] [10] ./cluster_mpib[0x1000f674]
+[r229n09:65374] [11] ./cluster_mpib[0x10058950]
+[r229n09:65374] [12] ./cluster_mpib[0x100589d8]
+[r229n09:65374] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:65374] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:65374] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:65374] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:82140] *** Process received signal ***
+[r229n08:82140] Signal: Aborted (6)
+[r229n08:82140] Signal code:  (-6)
+[r229n08:82140] [ 0] [0x2000000504d8]
+[r229n08:82140] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:82140] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:82140] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:82140] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:82140] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:82140] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:82140] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:82140] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:82140] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:82140] [10] ./cluster_mpib[0x1000f674]
+[r229n08:82140] [11] ./cluster_mpib[0x10058950]
+[r229n08:82140] [12] ./cluster_mpib[0x100589d8]
+[r229n08:82140] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:82140] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:82140] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:82140] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:82142] *** Process received signal ***
+[r229n08:82142] Signal: Aborted (6)
+[r229n08:82142] Signal code:  (-6)
+[r229n08:82142] [ 0] [0x2000000504d8]
+[r229n08:82142] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:82142] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:82142] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:82142] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:82142] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:82142] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:82142] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:82142] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:82142] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:82142] [10] ./cluster_mpib[0x1000f674]
+[r229n08:82142] [11] ./cluster_mpib[0x10058950]
+[r229n08:82142] [12] ./cluster_mpib[0x100589d8]
+[r229n08:82142] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:82142] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:82142] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:82142] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:82139] *** Process received signal ***
+[r229n08:82139] Signal: Aborted (6)
+[r229n08:82139] Signal code:  (-6)
+[r229n08:82139] [ 0] [0x2000000504d8]
+[r229n08:82139] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:82139] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:82139] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:82139] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:82139] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:82139] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:82139] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:82139] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:82139] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:82139] [10] ./cluster_mpib[0x1000f674]
+[r229n08:82139] [11] ./cluster_mpib[0x10058950]
+[r229n08:82139] [12] ./cluster_mpib[0x100589d8]
+[r229n08:82139] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:82139] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:82139] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:82139] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:65371] *** Process received signal ***
+[r229n09:65371] Signal: Aborted (6)
+[r229n09:65371] Signal code:  (-6)
+[r229n09:65371] [ 0] [0x2000000504d8]
+[r229n09:65371] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:65371] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:65371] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:65371] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:65371] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:65371] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:65371] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:65371] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:65371] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:65371] [10] ./cluster_mpib[0x1000f674]
+[r229n09:65371] [11] ./cluster_mpib[0x10058950]
+[r229n09:65371] [12] ./cluster_mpib[0x100589d8]
+[r229n09:65371] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:65371] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:65371] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:65371] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:65373] *** Process received signal ***
+[r229n09:65373] Signal: Aborted (6)
+[r229n09:65373] Signal code:  (-6)
+[r229n09:65373] [ 0] [0x2000000504d8]
+[r229n09:65373] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:65373] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:65373] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:65373] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:65373] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:65373] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:65373] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:65373] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:65373] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:65373] [10] ./cluster_mpib[0x1000f674]
+[r229n09:65373] [11] ./cluster_mpib[0x10058950]
+[r229n09:65373] [12] ./cluster_mpib[0x100589d8]
+[r229n09:65373] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:65373] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:65373] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:65373] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:65372] *** Process received signal ***
+[r229n09:65372] Signal: Aborted (6)
+[r229n09:65372] Signal code:  (-6)
+[r229n09:65372] [ 0] [0x2000000504d8]
+[r229n09:65372] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:65372] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:65372] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:65372] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:65372] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:65372] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:65372] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:65372] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:65372] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:65372] [10] ./cluster_mpib[0x1000f674]
+[r229n09:65372] [11] ./cluster_mpib[0x10058950]
+[r229n09:65372] [12] ./cluster_mpib[0x100589d8]
+[r229n09:65372] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:65372] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:65372] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:65372] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:75164] *** Process received signal ***
+[r229n09:75164] Signal: Aborted (6)
+[r229n09:75164] Signal code:  (-6)
+[r229n09:75164] [ 0] [0x2000000504d8]
+[r229n09:75164] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:75164] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:75164] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:75164] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:75164] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:75164] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:75164] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:75164] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:75164] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:75164] [10] ./cluster_mpib[0x1000f674]
+[r229n09:75164] [11] ./cluster_mpib[0x10058950]
+[r229n09:75164] [12] ./cluster_mpib[0x100589d8]
+[r229n09:75164] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:75164] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:75164] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:75164] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:91479] *** Process received signal ***
+[r229n08:91479] Signal: Aborted (6)
+[r229n08:91479] Signal code:  (-6)
+[r229n08:91479] [ 0] [0x2000000504d8]
+[r229n08:91479] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:91479] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:91479] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:91479] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:91479] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:91479] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:91479] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:91479] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:91479] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:91479] [10] ./cluster_mpib[0x1000f674]
+[r229n08:91479] [11] ./cluster_mpib[0x10058950]
+[r229n08:91479] [12] ./cluster_mpib[0x100589d8]
+[r229n08:91479] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:91479] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:91479] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:91479] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:91480] *** Process received signal ***
+[r229n08:91480] Signal: Aborted (6)
+[r229n08:91480] Signal code:  (-6)
+[r229n08:91480] [ 0] [0x2000000504d8]
+[r229n08:91480] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:91480] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:91480] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:91480] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:91480] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:91480] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:91480] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:91480] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:91480] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:91480] [10] ./cluster_mpib[0x1000f674]
+[r229n08:91480] [11] ./cluster_mpib[0x10058950]
+[r229n08:91480] [12] ./cluster_mpib[0x100589d8]
+[r229n08:91480] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:91480] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:91480] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:91480] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:91478] *** Process received signal ***
+[r229n08:91478] Signal: Aborted (6)
+[r229n08:91478] Signal code:  (-6)
+[r229n08:91478] [ 0] [0x2000000504d8]
+[r229n08:91478] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:91478] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:91478] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:91478] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:91478] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:91478] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:91478] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:91478] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:91478] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:91478] [10] ./cluster_mpib[0x1000f674]
+[r229n08:91478] [11] ./cluster_mpib[0x10058950]
+[r229n08:91478] [12] ./cluster_mpib[0x100589d8]
+[r229n08:91478] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:91478] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:91478] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:91478] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:91481] *** Process received signal ***
+[r229n08:91481] Signal: Aborted (6)
+[r229n08:91481] Signal code:  (-6)
+[r229n08:91481] [ 0] [0x2000000504d8]
+[r229n08:91481] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:91481] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:91481] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:91481] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:91481] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:91481] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:91481] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:91481] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:91481] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:91481] [10] ./cluster_mpib[0x1000f674]
+[r229n08:91481] [11] ./cluster_mpib[0x10058950]
+[r229n08:91481] [12] ./cluster_mpib[0x100589d8]
+[r229n08:91481] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:91481] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:91481] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:91481] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:75165] *** Process received signal ***
+[r229n09:75165] Signal: Aborted (6)
+[r229n09:75165] Signal code:  (-6)
+[r229n09:75165] [ 0] [0x2000000504d8]
+[r229n09:75165] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:75165] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:75165] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:75165] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:75165] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:75165] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:75165] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:75165] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:75165] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:75165] [10] ./cluster_mpib[0x1000f674]
+[r229n09:75165] [11] ./cluster_mpib[0x10058950]
+[r229n09:75165] [12] ./cluster_mpib[0x100589d8]
+[r229n09:75165] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:75165] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:75165] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:75165] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:75166] *** Process received signal ***
+[r229n09:75166] Signal: Aborted (6)
+[r229n09:75166] Signal code:  (-6)
+[r229n09:75166] [ 0] [0x2000000504d8]
+[r229n09:75166] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:75166] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:75166] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:75166] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:75166] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:75166] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:75166] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:75166] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:75166] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:75166] [10] ./cluster_mpib[0x1000f674]
+[r229n09:75166] [11] ./cluster_mpib[0x10058950]
+[r229n09:75166] [12] ./cluster_mpib[0x100589d8]
+[r229n09:75166] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:75166] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:75166] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:75166] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:75163] *** Process received signal ***
+[r229n09:75163] Signal: Aborted (6)
+[r229n09:75163] Signal code:  (-6)
+[r229n09:75163] [ 0] [0x2000000504d8]
+[r229n09:75163] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:75163] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:75163] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:75163] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:75163] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:75163] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:75163] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:75163] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:75163] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:75163] [10] ./cluster_mpib[0x1000f674]
+[r229n09:75163] [11] ./cluster_mpib[0x10058950]
+[r229n09:75163] [12] ./cluster_mpib[0x100589d8]
+[r229n09:75163] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:75163] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:75163] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:75163] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:101321] *** Process received signal ***
+[r229n08:101321] Signal: Aborted (6)
+[r229n08:101321] Signal code:  (-6)
+[r229n08:101321] [ 0] [0x2000000504d8]
+[r229n08:101321] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:101321] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:101321] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:101321] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:101321] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:101321] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:101321] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:101321] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:101321] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:101321] [10] ./cluster_mpib[0x1000f674]
+[r229n08:101321] [11] ./cluster_mpib[0x10058950]
+[r229n08:101321] [12] ./cluster_mpib[0x100589d8]
+[r229n08:101321] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:101321] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:101321] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:101321] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:85295] *** Process received signal ***
+[r229n09:85295] Signal: Aborted (6)
+[r229n09:85295] Signal code:  (-6)
+[r229n09:85295] [ 0] [0x2000000504d8]
+[r229n09:85295] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:85295] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:85295] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:85295] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:85295] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:85295] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:85295] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:85295] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:85295] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:85295] [10] ./cluster_mpib[0x1000f674]
+[r229n09:85295] [11] ./cluster_mpib[0x10058950]
+[r229n09:85295] [12] ./cluster_mpib[0x100589d8]
+[r229n09:85295] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:85295] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:85295] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:85295] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:101324] *** Process received signal ***
+[r229n08:101324] Signal: Aborted (6)
+[r229n08:101324] Signal code:  (-6)
+[r229n08:101324] [ 0] [0x2000000504d8]
+[r229n08:101324] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:101324] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:101324] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:101324] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:101324] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:101324] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:101324] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:101324] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:101324] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:101324] [10] ./cluster_mpib[0x1000f674]
+[r229n08:101324] [11] ./cluster_mpib[0x10058950]
+[r229n08:101324] [12] ./cluster_mpib[0x100589d8]
+[r229n08:101324] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:101324] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:101324] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:101324] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:101323] *** Process received signal ***
+[r229n08:101323] Signal: Aborted (6)
+[r229n08:101323] Signal code:  (-6)
+[r229n08:101323] [ 0] [0x2000000504d8]
+[r229n08:101323] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:101323] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:101323] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:101323] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:101323] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:101323] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:101323] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:101323] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:101323] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:101323] [10] ./cluster_mpib[0x1000f674]
+[r229n08:101323] [11] ./cluster_mpib[0x10058950]
+[r229n08:101323] [12] ./cluster_mpib[0x100589d8]
+[r229n08:101323] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:101323] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:101323] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:101323] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:101322] *** Process received signal ***
+[r229n08:101322] Signal: Aborted (6)
+[r229n08:101322] Signal code:  (-6)
+[r229n08:101322] [ 0] [0x2000000504d8]
+[r229n08:101322] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:101322] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:101322] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:101322] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:101322] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:101322] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:101322] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:101322] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:101322] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:101322] [10] ./cluster_mpib[0x1000f674]
+[r229n08:101322] [11] ./cluster_mpib[0x10058950]
+[r229n08:101322] [12] ./cluster_mpib[0x100589d8]
+[r229n08:101322] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:101322] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:101322] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:101322] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:85292] *** Process received signal ***
+[r229n09:85292] Signal: Aborted (6)
+[r229n09:85292] Signal code:  (-6)
+[r229n09:85292] [ 0] [0x2000000504d8]
+[r229n09:85292] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:85292] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:85292] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:85292] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:85292] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:85292] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:85292] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:85292] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:85292] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:85292] [10] ./cluster_mpib[0x1000f674]
+[r229n09:85292] [11] ./cluster_mpib[0x10058950]
+[r229n09:85292] [12] ./cluster_mpib[0x100589d8]
+[r229n09:85292] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:85292] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:85292] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:85292] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:85294] *** Process received signal ***
+[r229n09:85294] Signal: Aborted (6)
+[r229n09:85294] Signal code:  (-6)
+[r229n09:85294] [ 0] [0x2000000504d8]
+[r229n09:85294] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:85294] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:85294] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:85294] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:85294] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:85294] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:85294] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:85294] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:85294] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:85294] [10] ./cluster_mpib[0x1000f674]
+[r229n09:85294] [11] ./cluster_mpib[0x10058950]
+[r229n09:85294] [12] ./cluster_mpib[0x100589d8]
+[r229n09:85294] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:85294] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:85294] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:85294] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:85293] *** Process received signal ***
+[r229n09:85293] Signal: Aborted (6)
+[r229n09:85293] Signal code:  (-6)
+[r229n09:85293] [ 0] [0x2000000504d8]
+[r229n09:85293] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:85293] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:85293] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:85293] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:85293] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:85293] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:85293] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:85293] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:85293] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:85293] [10] ./cluster_mpib[0x1000f674]
+[r229n09:85293] [11] ./cluster_mpib[0x10058950]
+[r229n09:85293] [12] ./cluster_mpib[0x100589d8]
+[r229n09:85293] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:85293] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:85293] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:85293] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:110761] *** Process received signal ***
+[r229n08:110761] Signal: Aborted (6)
+[r229n08:110761] Signal code:  (-6)
+[r229n08:110761] [ 0] [0x2000000504d8]
+[r229n08:110761] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:110761] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:110761] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:110761] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:110761] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:110761] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:110761] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:110761] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:110761] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:110761] [10] ./cluster_mpib[0x1000f674]
+[r229n08:110761] [11] ./cluster_mpib[0x10058950]
+[r229n08:110761] [12] ./cluster_mpib[0x100589d8]
+[r229n08:110761] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:110761] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:110761] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:110761] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:95155] *** Process received signal ***
+[r229n09:95155] Signal: Aborted (6)
+[r229n09:95155] Signal code:  (-6)
+[r229n09:95155] [ 0] [0x2000000504d8]
+[r229n09:95155] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:95155] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:95155] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:95155] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:95155] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:95155] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:95155] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:95155] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:95155] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:95155] [10] ./cluster_mpib[0x1000f674]
+[r229n09:95155] [11] ./cluster_mpib[0x10058950]
+[r229n09:95155] [12] ./cluster_mpib[0x100589d8]
+[r229n09:95155] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:95155] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:95155] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:95155] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:110763] *** Process received signal ***
+[r229n08:110763] Signal: Aborted (6)
+[r229n08:110763] Signal code:  (-6)
+[r229n08:110763] [ 0] [0x2000000504d8]
+[r229n08:110763] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:110763] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:110763] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:110763] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:110763] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:110763] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:110763] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:110763] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:110763] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:110763] [10] ./cluster_mpib[0x1000f674]
+[r229n08:110763] [11] ./cluster_mpib[0x10058950]
+[r229n08:110763] [12] ./cluster_mpib[0x100589d8]
+[r229n08:110763] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:110763] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:110763] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:110763] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:110762] *** Process received signal ***
+[r229n08:110762] Signal: Aborted (6)
+[r229n08:110762] Signal code:  (-6)
+[r229n08:110762] [ 0] [0x2000000504d8]
+[r229n08:110762] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:110762] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:110762] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:110762] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:110762] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:110762] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:110762] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:110762] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:110762] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:110762] [10] ./cluster_mpib[0x1000f674]
+[r229n08:110762] [11] ./cluster_mpib[0x10058950]
+[r229n08:110762] [12] ./cluster_mpib[0x100589d8]
+[r229n08:110762] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:110762] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:110762] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:110762] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:110760] *** Process received signal ***
+[r229n08:110760] Signal: Aborted (6)
+[r229n08:110760] Signal code:  (-6)
+[r229n08:110760] [ 0] [0x2000000504d8]
+[r229n08:110760] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:110760] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:110760] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:110760] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:110760] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:110760] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:110760] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:110760] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:110760] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:110760] [10] ./cluster_mpib[0x1000f674]
+[r229n08:110760] [11] ./cluster_mpib[0x10058950]
+[r229n08:110760] [12] ./cluster_mpib[0x100589d8]
+[r229n08:110760] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:110760] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:110760] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:110760] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:95153] *** Process received signal ***
+[r229n09:95153] Signal: Aborted (6)
+[r229n09:95153] Signal code:  (-6)
+[r229n09:95153] [ 0] [0x2000000504d8]
+[r229n09:95153] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:95153] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:95153] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:95153] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:95153] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:95153] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:95153] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:95153] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:95153] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:95153] [10] ./cluster_mpib[0x1000f674]
+[r229n09:95153] [11] ./cluster_mpib[0x10058950]
+[r229n09:95153] [12] ./cluster_mpib[0x100589d8]
+[r229n09:95153] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:95153] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:95153] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:95153] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:95152] *** Process received signal ***
+[r229n09:95152] Signal: Aborted (6)
+[r229n09:95152] Signal code:  (-6)
+[r229n09:95152] [ 0] [0x2000000504d8]
+[r229n09:95152] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:95152] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:95152] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:95152] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:95152] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:95152] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:95152] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:95152] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:95152] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:95152] [10] ./cluster_mpib[0x1000f674]
+[r229n09:95152] [11] ./cluster_mpib[0x10058950]
+[r229n09:95152] [12] ./cluster_mpib[0x100589d8]
+[r229n09:95152] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:95152] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:95152] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:95152] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:95154] *** Process received signal ***
+[r229n09:95154] Signal: Aborted (6)
+[r229n09:95154] Signal code:  (-6)
+[r229n09:95154] [ 0] [0x2000000504d8]
+[r229n09:95154] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:95154] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:95154] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:95154] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:95154] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:95154] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:95154] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:95154] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:95154] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:95154] [10] ./cluster_mpib[0x1000f674]
+[r229n09:95154] [11] ./cluster_mpib[0x10058950]
+[r229n09:95154] [12] ./cluster_mpib[0x100589d8]
+[r229n09:95154] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:95154] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:95154] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:95154] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:123189] *** Process received signal ***
+[r229n08:123189] Signal: Aborted (6)
+[r229n08:123189] Signal code:  (-6)
+[r229n08:123189] [ 0] [0x2000000504d8]
+[r229n08:123189] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:123189] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:123189] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:123189] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:123189] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:123189] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:123189] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:123189] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:123189] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:123189] [10] ./cluster_mpib[0x1000f674]
+[r229n08:123189] [11] ./cluster_mpib[0x10058950]
+[r229n08:123189] [12] ./cluster_mpib[0x100589d8]
+[r229n08:123189] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:123189] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:123189] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:123189] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:108025] *** Process received signal ***
+[r229n09:108025] Signal: Aborted (6)
+[r229n09:108025] Signal code:  (-6)
+[r229n09:108025] [ 0] [0x2000000504d8]
+[r229n09:108025] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:108025] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:108025] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:108025] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:108025] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:108025] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:108025] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:108025] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:108025] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:108025] [10] ./cluster_mpib[0x1000f674]
+[r229n09:108025] [11] ./cluster_mpib[0x10058950]
+[r229n09:108025] [12] ./cluster_mpib[0x100589d8]
+[r229n09:108025] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:108025] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:108025] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:108025] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:123188] *** Process received signal ***
+[r229n08:123188] Signal: Aborted (6)
+[r229n08:123188] Signal code:  (-6)
+[r229n08:123188] [ 0] [0x2000000504d8]
+[r229n08:123188] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:123188] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:123188] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:123188] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:123188] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:123188] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:123188] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:123188] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:123188] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:123188] [10] ./cluster_mpib[0x1000f674]
+[r229n08:123188] [11] ./cluster_mpib[0x10058950]
+[r229n08:123188] [12] ./cluster_mpib[0x100589d8]
+[r229n08:123188] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:123188] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:123188] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:123188] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:123191] *** Process received signal ***
+[r229n08:123191] Signal: Aborted (6)
+[r229n08:123191] Signal code:  (-6)
+[r229n08:123191] [ 0] [0x2000000504d8]
+[r229n08:123191] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:123191] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:123191] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:123191] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:123191] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:123191] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:123191] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:123191] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:123191] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:123191] [10] ./cluster_mpib[0x1000f674]
+[r229n08:123191] [11] ./cluster_mpib[0x10058950]
+[r229n08:123191] [12] ./cluster_mpib[0x100589d8]
+[r229n08:123191] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:123191] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:123191] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:123191] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:123190] *** Process received signal ***
+[r229n08:123190] Signal: Aborted (6)
+[r229n08:123190] Signal code:  (-6)
+[r229n08:123190] [ 0] [0x2000000504d8]
+[r229n08:123190] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:123190] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:123190] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:123190] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:123190] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:123190] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:123190] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:123190] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:123190] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:123190] [10] ./cluster_mpib[0x1000f674]
+[r229n08:123190] [11] ./cluster_mpib[0x10058950]
+[r229n08:123190] [12] ./cluster_mpib[0x100589d8]
+[r229n08:123190] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:123190] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:123190] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:123190] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:108028] *** Process received signal ***
+[r229n09:108028] Signal: Aborted (6)
+[r229n09:108028] Signal code:  (-6)
+[r229n09:108028] [ 0] [0x2000000504d8]
+[r229n09:108028] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:108028] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:108028] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:108028] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:108028] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:108028] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:108028] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:108028] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:108028] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:108028] [10] ./cluster_mpib[0x1000f674]
+[r229n09:108028] [11] ./cluster_mpib[0x10058950]
+[r229n09:108028] [12] ./cluster_mpib[0x100589d8]
+[r229n09:108028] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:108028] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:108028] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:108028] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:108027] *** Process received signal ***
+[r229n09:108027] Signal: Aborted (6)
+[r229n09:108027] Signal code:  (-6)
+[r229n09:108027] [ 0] [0x2000000504d8]
+[r229n09:108027] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:108027] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:108027] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:108027] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:108027] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:108027] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:108027] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:108027] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:108027] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:108027] [10] ./cluster_mpib[0x1000f674]
+[r229n09:108027] [11] ./cluster_mpib[0x10058950]
+[r229n09:108027] [12] ./cluster_mpib[0x100589d8]
+[r229n09:108027] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:108027] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:108027] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:108027] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:108026] *** Process received signal ***
+[r229n09:108026] Signal: Aborted (6)
+[r229n09:108026] Signal code:  (-6)
+[r229n09:108026] [ 0] [0x2000000504d8]
+[r229n09:108026] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:108026] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:108026] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:108026] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:108026] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:108026] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:108026] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:108026] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:108026] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:108026] [10] ./cluster_mpib[0x1000f674]
+[r229n09:108026] [11] ./cluster_mpib[0x10058950]
+[r229n09:108026] [12] ./cluster_mpib[0x100589d8]
+[r229n09:108026] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:108026] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:108026] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:108026] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:02742] *** Process received signal ***
+[r229n08:02742] Signal: Aborted (6)
+[r229n08:02742] Signal code:  (-6)
+[r229n08:02742] [ 0] [0x2000000504d8]
+[r229n08:02742] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:02742] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:02742] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:02742] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:02742] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:02742] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:02742] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:02742] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:02742] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:02742] [10] ./cluster_mpib[0x1000f674]
+[r229n08:02742] [11] ./cluster_mpib[0x10058950]
+[r229n08:02742] [12] ./cluster_mpib[0x100589d8]
+[r229n08:02742] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:02742] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:02742] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:02742] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:118006] *** Process received signal ***
+[r229n09:118006] Signal: Aborted (6)
+[r229n09:118006] Signal code:  (-6)
+[r229n09:118006] [ 0] [0x2000000504d8]
+[r229n09:118006] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:118006] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:118006] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:118006] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:118006] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:118006] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:118006] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:118006] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:118006] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:118006] [10] ./cluster_mpib[0x1000f674]
+[r229n09:118006] [11] ./cluster_mpib[0x10058950]
+[r229n09:118006] [12] ./cluster_mpib[0x100589d8]
+[r229n09:118006] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:118006] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:118006] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:118006] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:02745] *** Process received signal ***
+[r229n08:02745] Signal: Aborted (6)
+[r229n08:02745] Signal code:  (-6)
+[r229n08:02745] [ 0] [0x2000000504d8]
+[r229n08:02745] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:02745] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:02745] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:02745] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:02745] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:02745] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:02745] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:02745] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:02745] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:02745] [10] ./cluster_mpib[0x1000f674]
+[r229n08:02745] [11] ./cluster_mpib[0x10058950]
+[r229n08:02745] [12] ./cluster_mpib[0x100589d8]
+[r229n08:02745] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:02745] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:02745] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:02745] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:02744] *** Process received signal ***
+[r229n08:02744] Signal: Aborted (6)
+[r229n08:02744] Signal code:  (-6)
+[r229n08:02744] [ 0] [0x2000000504d8]
+[r229n08:02744] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:02744] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:02744] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:02744] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:02744] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:02744] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:02744] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:02744] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:02744] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:02744] [10] ./cluster_mpib[0x1000f674]
+[r229n08:02744] [11] ./cluster_mpib[0x10058950]
+[r229n08:02744] [12] ./cluster_mpib[0x100589d8]
+[r229n08:02744] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:02744] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:02744] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:02744] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:02743] *** Process received signal ***
+[r229n08:02743] Signal: Aborted (6)
+[r229n08:02743] Signal code:  (-6)
+[r229n08:02743] [ 0] [0x2000000504d8]
+[r229n08:02743] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:02743] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:02743] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:02743] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:02743] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:02743] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:02743] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:02743] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:02743] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:02743] [10] ./cluster_mpib[0x1000f674]
+[r229n08:02743] [11] ./cluster_mpib[0x10058950]
+[r229n08:02743] [12] ./cluster_mpib[0x100589d8]
+[r229n08:02743] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:02743] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:02743] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:02743] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:118005] *** Process received signal ***
+[r229n09:118005] Signal: Aborted (6)
+[r229n09:118005] Signal code:  (-6)
+[r229n09:118005] [ 0] [0x2000000504d8]
+[r229n09:118005] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:118005] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:118005] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:118005] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:118005] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:118005] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:118005] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:118005] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:118005] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:118005] [10] ./cluster_mpib[0x1000f674]
+[r229n09:118005] [11] ./cluster_mpib[0x10058950]
+[r229n09:118005] [12] ./cluster_mpib[0x100589d8]
+[r229n09:118005] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:118005] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:118005] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:118005] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:118004] *** Process received signal ***
+[r229n09:118004] Signal: Aborted (6)
+[r229n09:118004] Signal code:  (-6)
+[r229n09:118004] [ 0] [0x2000000504d8]
+[r229n09:118004] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:118004] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:118004] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:118004] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:118004] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:118004] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:118004] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:118004] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:118004] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:118004] [10] ./cluster_mpib[0x1000f674]
+[r229n09:118004] [11] ./cluster_mpib[0x10058950]
+[r229n09:118004] [12] ./cluster_mpib[0x100589d8]
+[r229n09:118004] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:118004] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:118004] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:118004] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:118003] *** Process received signal ***
+[r229n09:118003] Signal: Aborted (6)
+[r229n09:118003] Signal code:  (-6)
+[r229n09:118003] [ 0] [0x2000000504d8]
+[r229n09:118003] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:118003] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:118003] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:118003] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:118003] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:118003] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:118003] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:118003] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:118003] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:118003] [10] ./cluster_mpib[0x1000f674]
+[r229n09:118003] [11] ./cluster_mpib[0x10058950]
+[r229n09:118003] [12] ./cluster_mpib[0x100589d8]
+[r229n09:118003] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:118003] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:118003] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:118003] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:12333] *** Process received signal ***
+[r229n08:12333] Signal: Aborted (6)
+[r229n08:12333] Signal code:  (-6)
+[r229n08:12333] [ 0] [0x2000000504d8]
+[r229n08:12333] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:12333] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:12333] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:12333] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:12333] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:12333] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:12333] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:12333] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:12333] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:12333] [10] ./cluster_mpib[0x1000f674]
+[r229n08:12333] [11] ./cluster_mpib[0x10058950]
+[r229n08:12333] [12] ./cluster_mpib[0x100589d8]
+[r229n08:12333] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:12333] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:12333] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:12333] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:127842] *** Process received signal ***
+[r229n09:127842] Signal: Aborted (6)
+[r229n09:127842] Signal code:  (-6)
+[r229n09:127842] [ 0] [0x2000000504d8]
+[r229n09:127842] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:127842] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:127842] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:127842] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:127842] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:127842] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:127842] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:127842] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:127842] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:127842] [10] ./cluster_mpib[0x1000f674]
+[r229n09:127842] [11] ./cluster_mpib[0x10058950]
+[r229n09:127842] [12] ./cluster_mpib[0x100589d8]
+[r229n09:127842] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:127842] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:127842] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:127842] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:127840] *** Process received signal ***
+[r229n09:127840] Signal: Aborted (6)
+[r229n09:127840] Signal code:  (-6)
+[r229n09:127840] [ 0] [0x2000000504d8]
+[r229n09:127840] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:127840] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:127840] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:127840] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:127840] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:127840] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:127840] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:127840] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:127840] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:127840] [10] ./cluster_mpib[0x1000f674]
+[r229n09:127840] [11] ./cluster_mpib[0x10058950]
+[r229n09:127840] [12] ./cluster_mpib[0x100589d8]
+[r229n09:127840] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:127840] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:127840] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:127840] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:12331] *** Process received signal ***
+[r229n08:12331] Signal: Aborted (6)
+[r229n08:12331] Signal code:  (-6)
+[r229n08:12331] [ 0] [0x2000000504d8]
+[r229n08:12331] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:12331] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:12331] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:12331] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:12331] [ 5] terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:12330] *** Process received signal ***
+[r229n08:12330] Signal: Aborted (6)
+[r229n08:12330] Signal code:  (-6)
+[r229n08:12330] [ 0] [0x2000000504d8]
+[r229n08:12330] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:12330] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:12330] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:12330] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:12330] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:12330] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:12330] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:12330] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:12330] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:12330] [10] ./cluster_mpib[0x1000f674]
+[r229n08:12330] [11] ./cluster_mpib[0x10058950]
+[r229n08:12330] [12] ./cluster_mpib[0x100589d8]
+[r229n08:12330] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:12330] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:12330] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:12330] *** End of error message ***
+/cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:12331] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:12331] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:12331] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:12331] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:12331] [10] ./cluster_mpib[0x1000f674]
+[r229n08:12331] [11] ./cluster_mpib[0x10058950]
+[r229n08:12331] [12] ./cluster_mpib[0x100589d8]
+[r229n08:12331] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:12331] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:12331] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:12331] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n08:12332] *** Process received signal ***
+[r229n08:12332] Signal: Aborted (6)
+[r229n08:12332] Signal code:  (-6)
+[r229n08:12332] [ 0] [0x2000000504d8]
+[r229n08:12332] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n08:12332] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n08:12332] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n08:12332] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n08:12332] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n08:12332] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n08:12332] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n08:12332] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n08:12332] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n08:12332] [10] ./cluster_mpib[0x1000f674]
+[r229n08:12332] [11] ./cluster_mpib[0x10058950]
+[r229n08:12332] [12] ./cluster_mpib[0x100589d8]
+[r229n08:12332] [13] ./cluster_mpib[0x1000a0b0]
+[r229n08:12332] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n08:12332] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n08:12332] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:127841] *** Process received signal ***
+[r229n09:127841] Signal: Aborted (6)
+[r229n09:127841] Signal code:  (-6)
+[r229n09:127841] [ 0] [0x2000000504d8]
+[r229n09:127841] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:127841] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:127841] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:127841] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:127841] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:127841] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:127841] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:127841] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:127841] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:127841] [10] ./cluster_mpib[0x1000f674]
+[r229n09:127841] [11] ./cluster_mpib[0x10058950]
+[r229n09:127841] [12] ./cluster_mpib[0x100589d8]
+[r229n09:127841] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:127841] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:127841] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:127841] *** End of error message ***
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  device free failed: an illegal memory access was encountered
+[r229n09:127839] *** Process received signal ***
+[r229n09:127839] Signal: Aborted (6)
+[r229n09:127839] Signal code:  (-6)
+[r229n09:127839] [ 0] [0x2000000504d8]
+[r229n09:127839] [ 1] /lib64/libc.so.6(abort+0x2b4)[0x200000691f94]
+[r229n09:127839] [ 2] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x158)[0x2000003afdd8]
+[r229n09:127839] [ 3] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xaace4)[0x2000003aace4]
+[r229n09:127839] [ 4] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(+0xa9178)[0x2000003a9178]
+[r229n09:127839] [ 5] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__gxx_personality_v0+0x3fc)[0x2000003aa23c]
+[r229n09:127839] [ 6] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(+0xbed0)[0x20000061bed0]
+[r229n09:127839] [ 7] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libgcc_s.so.1(_Unwind_RaiseException+0x374)[0x20000061c644]
+[r229n09:127839] [ 8] /cineca/prod/opt/compilers/gnu/8.4.0/none/lib64/libstdc++.so.6(__cxa_throw+0x68)[0x2000003ab268]
+[r229n09:127839] [ 9] ./cluster_mpib[0x1000f5b4]
+[r229n09:127839] [10] ./cluster_mpib[0x1000f674]
+[r229n09:127839] [11] ./cluster_mpib[0x10058950]
+[r229n09:127839] [12] ./cluster_mpib[0x100589d8]
+[r229n09:127839] [13] ./cluster_mpib[0x1000a0b0]
+[r229n09:127839] [14] /lib64/libc.so.6(+0x25100)[0x200000675100]
+[r229n09:127839] [15] /lib64/libc.so.6(__libc_start_main+0xc4)[0x2000006752f4]
+[r229n09:127839] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 0 on node r229n08 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Tue May  5 01:50:24 CEST 2020
