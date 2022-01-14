@@ -1,0 +1,18 @@
+format: jb-book
+root: Welcome
+parts:
+    - caption: Basic analysis
+      chapters:
+      - file: 0-analysis
+      - file: 1-exact
+      - file: 2-Axpby-Dot-Plot
+      - file: 3-Dx-Dy-Plot
+      - file: 4-latencies-and-bandwidths
+      - file: 5-prediction
+      - file: 6-hardware-details
+    - caption: Three dimensional extension
+      chapters:
+      - file: data3d/0-analysis
+      - file: data3d/1-exact
+      - file: data3d/2-Axpby-Dot-Plot
+      - file: data3d/3-Dxy-Dz-Ds-Plot
