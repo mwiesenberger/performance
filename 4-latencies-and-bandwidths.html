@@ -1,0 +1,1957 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Determine the latencies and bandwidths quantitatively &#8212; A performance study of Feltor</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="A test of the performance prediction model" href="5-prediction.html" />
+    <link rel="prev" title="Analysis of the dx and dy routines" href="3-Dx-Dy-Plot.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">A performance study of Feltor</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Welcome.html">
+   Welcome to the Feltor - performance project
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Basic analysis
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="0-analysis.html">
+   Explore the data-files in the repository and familiarize with pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-exact.html">
+   Check if results are binary correct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-Axpby-Dot-Plot.html">
+   Analysis of the axpby and dot routines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-Dx-Dy-Plot.html">
+   Analysis of the dx and dy routines
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Determine the latencies and bandwidths quantitatively
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-prediction.html">
+   A test of the performance prediction model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-hardware-details.html">
+   Details on the hardware used to gather the performance data
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Three dimensional extension
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="data3d/0-analysis.html">
+   Explore the data-files in the repository and familiarize with pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data3d/1-exact.html">
+   Check if results are binary correct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data3d/2-Axpby-Dot-Plot.html">
+   Analysis of the axpby and dot routines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data3d/3-Dxy-Dz-Ds-Plot.html">
+   Analysis of the dx and dy routines
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/4-latencies-and-bandwidths.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/mwiesenberger/performance"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/mwiesenberger/performance/issues/new?title=Issue%20on%20page%20%2F4-latencies-and-bandwidths.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/mwiesenberger/performance/main?urlpath=tree/docs/4-latencies-and-bandwidths.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumptions">
+   Assumptions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#but">
+   But
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axpby-and-dot-bandwidths">
+   Axpby and Dot Bandwidths
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axpby-and-dot-latencies">
+   Axpby and Dot Latencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dx-dy-bandwidths">
+   Dx-Dy Bandwidths
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dx-dy-latencies">
+   Dx-Dy Latencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#observations">
+   Observations
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Determine the latencies and bandwidths quantitatively</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumptions">
+   Assumptions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#but">
+   But
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axpby-and-dot-bandwidths">
+   Axpby and Dot Bandwidths
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#axpby-and-dot-latencies">
+   Axpby and Dot Latencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dx-dy-bandwidths">
+   Dx-Dy Bandwidths
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dx-dy-latencies">
+   Dx-Dy Latencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#observations">
+   Observations
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="determine-the-latencies-and-bandwidths-quantitatively">
+<h1>Determine the latencies and bandwidths quantitatively<a class="headerlink" href="#determine-the-latencies-and-bandwidths-quantitatively" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span> <span class="k">as</span> <span class="n">odict</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This notebook computes the latencies and bandwidths of the three primitive function types. Again, start with a list of files and architectures that we want to investigate.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#(hardware name, number of nodes)</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">odict</span><span class="p">({})</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;i5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;i5&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;gtx1060&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;gtx1060&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;skl_mpi1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;skl&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;skl_mpi2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;skl&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;skl_mpi4&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;skl&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;knl_mpi1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;knl&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;knl_mpi2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;knl&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;knl_mpi4&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;knl&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;p100nv_mpi1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;p100&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;p100nv_mpi2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;p100&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;p100nv_mpi4&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;p100&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;titanxp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;titanXp&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;v100nv_mpi1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;v100&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;v100nv_mpi2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;v100&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;v100nv_mpi4&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;v100&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="assumptions">
+<h2>Assumptions<a class="headerlink" href="#assumptions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>there are three basic functions: trivially parallel(axpby), nearest neighbor (dxdy), global reduction (dot)</p></li>
+<li><p>each can be represented by the single node bandwidth, the single node latency and the multinode latency</p></li>
+</ul>
+</div>
+<div class="section" id="but">
+<h2>But<a class="headerlink" href="#but" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>does not capture cache effect e.g. in SKl</p></li>
+</ul>
+<p>First, we read in files and extract runtimes and compute bandwidth for every measurement. We also compute the average runtime and bandwidth for every combination of n, Nx and Ny.</p>
+</div>
+<div class="section" id="axpby-and-dot-bandwidths">
+<h2>Axpby and Dot Bandwidths<a class="headerlink" href="#axpby-and-dot-bandwidths" title="Permalink to this headline">¶</a></h2>
+<p>The bandwidths are determined by taking the average bandwidth of the 30 bandwidths corresponding to the 3 largest sizes. The error is the standard deviation on these bandwidths.</p>
+</div>
+<div class="section" id="axpby-and-dot-latencies">
+<h2>Axpby and Dot Latencies<a class="headerlink" href="#axpby-and-dot-latencies" title="Permalink to this headline">¶</a></h2>
+<p>We try three different methods to compute the latency. First, we try the mean average runtime for the 3 smallest sizes. Second, we take the minimum of the average runtime among all combinations of n, Nx, and Ny. The error is the standard deviation corresponding to this average runtime. Finally, we use a correction factor from the more accurate bandwidths.</p>
+</div>
+<div class="section" id="dx-dy-bandwidths">
+<h2>Dx-Dy Bandwidths<a class="headerlink" href="#dx-dy-bandwidths" title="Permalink to this headline">¶</a></h2>
+<p>Since the efficiency of the matrix-vector multiplications depends on the polynomial coefficient we should compute these bandwidths separately for each coefficient and use sizes between 10MB and 1000MB</p>
+</div>
+<div class="section" id="dx-dy-latencies">
+<h2>Dx-Dy Latencies<a class="headerlink" href="#dx-dy-latencies" title="Permalink to this headline">¶</a></h2>
+<p>As in Axpby</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">names</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;axpby&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;dx&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dy&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+<span class="c1">#ns=[3,4]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">files</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">:</span>
+    <span class="n">runtimes</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;benchmark_&#39;</span><span class="o">+</span><span class="n">f</span><span class="o">+</span><span class="s1">&#39;.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="c1">#add size and bandwidth columns</span>
+    <span class="n">runtimes</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">]</span>
+                    <span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;Nx&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;Ny&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">1e6</span><span class="o">/</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#inplace transformation</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span><span class="n">memops</span> <span class="ow">in</span> <span class="n">names</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">:</span>
+        <span class="n">runtimes</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">name</span><span class="o">+</span><span class="s1">&#39;_bw&#39;</span><span class="p">,</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">1000</span><span class="o">*</span><span class="n">memops</span><span class="o">/</span><span class="n">runtimes</span><span class="p">[</span><span class="n">name</span><span class="p">])</span>
+    <span class="n">runtimes</span> <span class="o">=</span> <span class="n">runtimes</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span> <span class="n">dxdy</span><span class="o">=</span><span class="p">(</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dx&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dy&#39;</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">runtimes</span> <span class="o">=</span> <span class="n">runtimes</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span> <span class="n">dxdy_bw</span><span class="o">=</span><span class="mf">2.0</span><span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dx_bw&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dy_bw&#39;</span><span class="p">]</span>
+                               <span class="o">/</span><span class="p">(</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dx_bw&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;dy_bw&#39;</span><span class="p">]))</span>
+    <span class="c1">#compute one version with aggregated grouped sizes and one without</span>
+    <span class="n">avgruntimes</span><span class="o">=</span><span class="n">runtimes</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;Nx&#39;</span><span class="p">,</span><span class="s1">&#39;Ny&#39;</span><span class="p">,</span><span class="s1">&#39;size&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">])</span>
+    <span class="n">avgruntimes</span><span class="o">=</span><span class="n">avgruntimes</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;Nx&#39;</span><span class="p">,</span><span class="s1">&#39;Ny&#39;</span><span class="p">,</span><span class="s1">&#39;size&#39;</span><span class="p">])</span>
+    <span class="n">avgruntimes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;size&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#sort by size</span>
+    <span class="n">runtimes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;size&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">##first compute axpby and dot latencies and bandwidths </span>
+    <span class="n">nmax</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">s</span> <span class="o">=</span><span class="mi">30</span>
+
+    <span class="n">line</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">l</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">runtimes</span><span class="p">)</span>
+    <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#0</span>
+    <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#1</span>
+    <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">]:</span>
+        <span class="n">bandwidth</span>       <span class="o">=</span> <span class="n">runtimes</span><span class="p">[</span><span class="n">l</span><span class="o">-</span><span class="n">s</span><span class="p">:</span><span class="n">l</span><span class="p">][</span><span class="n">q</span><span class="o">+</span><span class="s1">&#39;_bw&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">err_bandwidth</span>   <span class="o">=</span> <span class="n">runtimes</span><span class="p">[</span><span class="n">l</span><span class="o">-</span><span class="n">s</span><span class="p">:</span><span class="n">l</span><span class="p">][</span><span class="n">q</span><span class="o">+</span><span class="s1">&#39;_bw&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+        <span class="n">mean_latency</span>    <span class="o">=</span> <span class="n">avgruntimes</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">nmax</span><span class="p">][(</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="n">min_latency</span>     <span class="o">=</span> <span class="n">avgruntimes</span><span class="p">[(</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="n">idx_min_latency</span> <span class="o">=</span> <span class="n">avgruntimes</span><span class="p">[(</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()</span>
+        <span class="n">corr_min_latency</span><span class="o">=</span> <span class="n">min_latency</span> <span class="o">-</span> <span class="n">avgruntimes</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx_min_latency</span><span class="p">]</span><span class="o">*</span><span class="n">names</span><span class="p">[</span><span class="n">q</span><span class="p">]</span><span class="o">/</span><span class="n">bandwidth</span><span class="o">/</span><span class="mf">1e-3</span>
+        <span class="n">err_latency</span>     <span class="o">=</span> <span class="n">avgruntimes</span><span class="p">[(</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx_min_latency</span><span class="p">]</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="k">if</span> <span class="n">corr_min_latency</span> <span class="o">&lt;</span><span class="mi">0</span> <span class="p">:</span> <span class="n">corr_min_latency</span> <span class="o">=</span> <span class="mi">0</span> 
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span> <span class="c1">#2 bandwidth</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">err_bandwidth</span><span class="p">)</span>  <span class="c1">#3 err_bandwidth</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mean_latency</span><span class="p">)</span> <span class="c1">#4 latency mean</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">min_latency</span><span class="p">)</span>  <span class="c1">#5 latency min</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">corr_min_latency</span> <span class="p">)</span> <span class="c1">#6 corrected lat </span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">err_latency</span> <span class="p">)</span> <span class="c1">#6 error lat </span>
+    <span class="c1">##now compute latency and bandwidths of dx and y</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]:</span>
+        <span class="c1">#take n</span>
+        <span class="n">dxdy</span><span class="o">=</span><span class="n">runtimes</span><span class="p">[</span><span class="n">runtimes</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">n</span><span class="p">]</span>
+        
+        <span class="n">avgdxdy</span> <span class="o">=</span> <span class="n">avgruntimes</span><span class="p">[</span><span class="n">avgruntimes</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">n</span><span class="p">]</span>
+        <span class="n">dxdy</span><span class="o">=</span><span class="n">dxdy</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;size&#39;</span><span class="p">)</span>
+        <span class="n">avgdxdy</span><span class="o">=</span><span class="n">avgdxdy</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;size&#39;</span><span class="p">)</span> <span class="c1">#sort by size</span>
+        <span class="n">bandwidth</span>       <span class="o">=</span> <span class="n">dxdy</span><span class="p">[(</span><span class="n">dxdy</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">dxdy</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">1000</span><span class="p">)][</span><span class="s1">&#39;dxdy_bw&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">err_bandwidth</span>   <span class="o">=</span> <span class="n">dxdy</span><span class="p">[(</span><span class="n">dxdy</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">dxdy</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">1000</span><span class="p">)][</span><span class="s1">&#39;dxdy_bw&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+        <span class="n">mean_latency</span>    <span class="o">=</span> <span class="n">avgdxdy</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">nmax</span><span class="p">][(</span><span class="s1">&#39;dxdy&#39;</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="n">min_latency</span>     <span class="o">=</span> <span class="n">avgdxdy</span><span class="p">[(</span><span class="s1">&#39;dxdy&#39;</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="n">idx_min_latency</span> <span class="o">=</span> <span class="n">avgdxdy</span><span class="p">[(</span><span class="s1">&#39;dxdy&#39;</span><span class="p">,</span><span class="s1">&#39;mean&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()</span>
+        <span class="n">corr_min_latency</span><span class="o">=</span> <span class="n">min_latency</span> <span class="o">-</span> <span class="n">avgdxdy</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx_min_latency</span><span class="p">]</span><span class="o">*</span><span class="n">names</span><span class="p">[</span><span class="s1">&#39;dx&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">bandwidth</span><span class="o">/</span><span class="mf">1e-3</span>
+        <span class="n">err_latency</span>     <span class="o">=</span> <span class="n">avgdxdy</span><span class="p">[(</span><span class="s1">&#39;dxdy&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx_min_latency</span><span class="p">]</span><span class="o">/</span><span class="mf">1e-6</span>
+        <span class="k">if</span> <span class="n">corr_min_latency</span> <span class="o">&lt;</span><span class="mi">0</span> <span class="p">:</span> 
+            <span class="n">corr_min_latency</span> <span class="o">=</span> <span class="mi">0</span> 
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span> <span class="c1">#2 bandwidth</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">err_bandwidth</span><span class="p">)</span>  <span class="c1">#3 err_bandwidth</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mean_latency</span><span class="p">)</span> <span class="c1">#4 latency mean</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">min_latency</span><span class="p">)</span>  <span class="c1">#5 latency min</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">corr_min_latency</span> <span class="p">)</span> <span class="c1">#6 corrected lat  </span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">err_latency</span> <span class="p">)</span> <span class="c1">#6 error lat     </span>
+    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the following cells we just display the results in a more accessible way or extract values to show in publications.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#now construct new more ordered table with values from previous cell      </span>
+<span class="n">tuples</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;arch&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),(</span><span class="s1">&#39;nodes&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)]</span>        
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy3&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy4&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy5&#39;</span><span class="p">]:</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;avg&#39;</span><span class="p">))</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">))</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;avg&#39;</span><span class="p">))</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;min&#39;</span><span class="p">))</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">))</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">))</span>
+    
+<span class="n">cols</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">values</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;arch&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;arch&#39;</span><span class="p">,</span><span class="s1">&#39;nodes&#39;</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1">#arr.loc[:,[(&#39;dot&#39;,&#39;bw&#39;,&#39;avg&#39;),(&#39;dot&#39;,&#39;lat&#39;,&#39;avg&#39;)]]</span>
+<span class="n">arr</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="6" halign="left">axpby</th>
+      <th colspan="4" halign="left">dot</th>
+      <th>...</th>
+      <th colspan="4" halign="left">dxdy4</th>
+      <th colspan="6" halign="left">dxdy5</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2" halign="left">bw</th>
+      <th colspan="4" halign="left">lat</th>
+      <th colspan="2" halign="left">bw</th>
+      <th colspan="2" halign="left">lat</th>
+      <th>...</th>
+      <th colspan="4" halign="left">lat</th>
+      <th colspan="2" halign="left">bw</th>
+      <th colspan="4" halign="left">lat</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>avg</th>
+      <th>std</th>
+      <th>avg</th>
+      <th>min</th>
+      <th>corr</th>
+      <th>std</th>
+      <th>avg</th>
+      <th>std</th>
+      <th>avg</th>
+      <th>min</th>
+      <th>...</th>
+      <th>avg</th>
+      <th>min</th>
+      <th>corr</th>
+      <th>std</th>
+      <th>avg</th>
+      <th>std</th>
+      <th>avg</th>
+      <th>min</th>
+      <th>corr</th>
+      <th>std</th>
+    </tr>
+    <tr>
+      <th>arch</th>
+      <th>nodes</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>gtx1060</th>
+      <th>1</th>
+      <td>157.05</td>
+      <td>0.06</td>
+      <td>23.19</td>
+      <td>3.51</td>
+      <td>0.00</td>
+      <td>0.24</td>
+      <td>26.50</td>
+      <td>0.10</td>
+      <td>199.90</td>
+      <td>131.63</td>
+      <td>...</td>
+      <td>322.56</td>
+      <td>72.50</td>
+      <td>0.00</td>
+      <td>0.27</td>
+      <td>69.26</td>
+      <td>17.04</td>
+      <td>571.43</td>
+      <td>125.05</td>
+      <td>0.00</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <th>i5</th>
+      <th>1</th>
+      <td>29.99</td>
+      <td>0.19</td>
+      <td>30.58</td>
+      <td>12.38</td>
+      <td>0.00</td>
+      <td>1.18</td>
+      <td>9.31</td>
+      <td>0.04</td>
+      <td>316.67</td>
+      <td>117.43</td>
+      <td>...</td>
+      <td>1212.12</td>
+      <td>208.32</td>
+      <td>0.00</td>
+      <td>12.42</td>
+      <td>21.45</td>
+      <td>1.91</td>
+      <td>1956.57</td>
+      <td>340.41</td>
+      <td>0.00</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">knl</th>
+      <th>1</th>
+      <td>393.15</td>
+      <td>22.19</td>
+      <td>11.81</td>
+      <td>9.98</td>
+      <td>5.47</td>
+      <td>0.30</td>
+      <td>141.36</td>
+      <td>6.63</td>
+      <td>77.05</td>
+      <td>63.20</td>
+      <td>...</td>
+      <td>215.74</td>
+      <td>52.06</td>
+      <td>0.00</td>
+      <td>1.59</td>
+      <td>101.34</td>
+      <td>14.94</td>
+      <td>451.55</td>
+      <td>98.29</td>
+      <td>0.00</td>
+      <td>37.85</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>420.41</td>
+      <td>40.35</td>
+      <td>10.71</td>
+      <td>10.01</td>
+      <td>7.89</td>
+      <td>0.21</td>
+      <td>128.36</td>
+      <td>2.71</td>
+      <td>99.39</td>
+      <td>91.51</td>
+      <td>...</td>
+      <td>207.80</td>
+      <td>92.39</td>
+      <td>59.93</td>
+      <td>1.70</td>
+      <td>88.47</td>
+      <td>7.45</td>
+      <td>363.12</td>
+      <td>133.93</td>
+      <td>71.21</td>
+      <td>8.96</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>420.70</td>
+      <td>43.72</td>
+      <td>10.53</td>
+      <td>10.21</td>
+      <td>9.16</td>
+      <td>0.09</td>
+      <td>109.74</td>
+      <td>3.94</td>
+      <td>126.08</td>
+      <td>122.29</td>
+      <td>...</td>
+      <td>155.14</td>
+      <td>82.89</td>
+      <td>67.54</td>
+      <td>5.47</td>
+      <td>89.24</td>
+      <td>13.82</td>
+      <td>235.93</td>
+      <td>108.08</td>
+      <td>76.99</td>
+      <td>6.04</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">p100</th>
+      <th>1</th>
+      <td>550.51</td>
+      <td>1.23</td>
+      <td>14.36</td>
+      <td>10.38</td>
+      <td>7.52</td>
+      <td>0.02</td>
+      <td>375.61</td>
+      <td>1.94</td>
+      <td>158.73</td>
+      <td>68.34</td>
+      <td>...</td>
+      <td>190.41</td>
+      <td>138.27</td>
+      <td>17.53</td>
+      <td>2.44</td>
+      <td>171.81</td>
+      <td>17.67</td>
+      <td>275.12</td>
+      <td>71.80</td>
+      <td>14.58</td>
+      <td>5.15</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>553.30</td>
+      <td>0.97</td>
+      <td>7.03</td>
+      <td>5.75</td>
+      <td>0.00</td>
+      <td>0.65</td>
+      <td>369.20</td>
+      <td>2.37</td>
+      <td>76.43</td>
+      <td>59.87</td>
+      <td>...</td>
+      <td>125.22</td>
+      <td>65.47</td>
+      <td>49.16</td>
+      <td>3.43</td>
+      <td>166.21</td>
+      <td>14.15</td>
+      <td>189.63</td>
+      <td>80.20</td>
+      <td>50.63</td>
+      <td>5.60</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>554.54</td>
+      <td>0.50</td>
+      <td>8.16</td>
+      <td>7.31</td>
+      <td>0.00</td>
+      <td>0.27</td>
+      <td>356.21</td>
+      <td>5.79</td>
+      <td>57.54</td>
+      <td>52.41</td>
+      <td>...</td>
+      <td>101.07</td>
+      <td>69.34</td>
+      <td>60.86</td>
+      <td>2.02</td>
+      <td>160.39</td>
+      <td>16.98</td>
+      <td>139.32</td>
+      <td>89.97</td>
+      <td>74.65</td>
+      <td>1.59</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">skl</th>
+      <th>1</th>
+      <td>206.71</td>
+      <td>5.87</td>
+      <td>4.56</td>
+      <td>4.07</td>
+      <td>0.00</td>
+      <td>0.11</td>
+      <td>192.05</td>
+      <td>18.31</td>
+      <td>32.29</td>
+      <td>24.19</td>
+      <td>...</td>
+      <td>340.88</td>
+      <td>82.83</td>
+      <td>15.38</td>
+      <td>1.05</td>
+      <td>110.87</td>
+      <td>8.03</td>
+      <td>442.70</td>
+      <td>132.54</td>
+      <td>20.32</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>216.29</td>
+      <td>7.02</td>
+      <td>4.17</td>
+      <td>3.95</td>
+      <td>0.00</td>
+      <td>0.18</td>
+      <td>182.31</td>
+      <td>11.77</td>
+      <td>31.34</td>
+      <td>25.87</td>
+      <td>...</td>
+      <td>149.05</td>
+      <td>63.79</td>
+      <td>30.71</td>
+      <td>0.86</td>
+      <td>114.29</td>
+      <td>7.18</td>
+      <td>249.57</td>
+      <td>89.13</td>
+      <td>34.70</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>232.62</td>
+      <td>15.11</td>
+      <td>4.11</td>
+      <td>4.02</td>
+      <td>0.00</td>
+      <td>0.26</td>
+      <td>166.86</td>
+      <td>23.97</td>
+      <td>43.80</td>
+      <td>42.40</td>
+      <td>...</td>
+      <td>90.99</td>
+      <td>47.41</td>
+      <td>29.99</td>
+      <td>1.16</td>
+      <td>110.39</td>
+      <td>9.24</td>
+      <td>142.54</td>
+      <td>61.74</td>
+      <td>33.57</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <th>titanXp</th>
+      <th>1</th>
+      <td>431.24</td>
+      <td>3.45</td>
+      <td>6.56</td>
+      <td>2.58</td>
+      <td>0.00</td>
+      <td>0.21</td>
+      <td>61.37</td>
+      <td>0.12</td>
+      <td>87.86</td>
+      <td>61.46</td>
+      <td>...</td>
+      <td>115.69</td>
+      <td>28.69</td>
+      <td>3.20</td>
+      <td>0.12</td>
+      <td>197.91</td>
+      <td>31.44</td>
+      <td>211.14</td>
+      <td>48.84</td>
+      <td>0.00</td>
+      <td>1.62</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">v100</th>
+      <th>1</th>
+      <td>846.42</td>
+      <td>0.95</td>
+      <td>5.01</td>
+      <td>4.68</td>
+      <td>0.50</td>
+      <td>0.34</td>
+      <td>610.15</td>
+      <td>5.99</td>
+      <td>95.96</td>
+      <td>92.35</td>
+      <td>...</td>
+      <td>45.70</td>
+      <td>11.74</td>
+      <td>2.70</td>
+      <td>0.02</td>
+      <td>589.97</td>
+      <td>65.17</td>
+      <td>78.97</td>
+      <td>22.98</td>
+      <td>6.32</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>846.01</td>
+      <td>1.07</td>
+      <td>5.66</td>
+      <td>5.58</td>
+      <td>0.00</td>
+      <td>0.03</td>
+      <td>578.96</td>
+      <td>12.17</td>
+      <td>102.71</td>
+      <td>99.70</td>
+      <td>...</td>
+      <td>47.17</td>
+      <td>36.54</td>
+      <td>31.64</td>
+      <td>0.17</td>
+      <td>567.50</td>
+      <td>46.64</td>
+      <td>61.97</td>
+      <td>38.84</td>
+      <td>30.18</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>841.47</td>
+      <td>3.03</td>
+      <td>5.73</td>
+      <td>5.60</td>
+      <td>0.00</td>
+      <td>0.31</td>
+      <td>526.26</td>
+      <td>16.99</td>
+      <td>103.29</td>
+      <td>98.08</td>
+      <td>...</td>
+      <td>42.52</td>
+      <td>38.74</td>
+      <td>36.29</td>
+      <td>2.10</td>
+      <td>556.61</td>
+      <td>56.29</td>
+      <td>47.54</td>
+      <td>39.42</td>
+      <td>35.01</td>
+      <td>1.77</td>
+    </tr>
+  </tbody>
+</table>
+<p>15 rows × 36 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#arr=arr.reset_index()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define conversion function for writing nice output tables</span>
+<span class="k">def</span> <span class="nf">toString</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> 
+    <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">:</span> <span class="k">return</span> <span class="s1">&#39;n/a&#39;</span>
+    <span class="c1">#string = &#39;%.1f&#39;% x</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">np</span>.ceil(x)
+    <span class="c1">#if np.ceil(x)&lt;100 : string = &#39;0&#39;+string</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">10</span> <span class="p">:</span> <span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="o">+</span><span class="n">string</span>
+    <span class="k">return</span> <span class="n">string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">addto</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy3&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy4&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy5&#39;</span><span class="p">]:</span>
+    <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;string&#39;</span><span class="p">)]</span><span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;bw&#39;</span><span class="p">][</span><span class="s1">&#39;avg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">toString</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot; ± &quot;</span><span class="o">+</span><span class="n">arr</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;bw&#39;</span><span class="p">][</span><span class="s1">&#39;std&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">toString</span><span class="p">)</span>
+    <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;string&#39;</span><span class="p">)]</span><span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="s1">&#39;corr&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">toString</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot; ± &quot;</span><span class="o">+</span><span class="n">arr</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="s1">&#39;std&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">toString</span><span class="p">)</span>
+    <span class="n">addto</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;string&#39;</span><span class="p">))</span>
+    <span class="n">addto</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;string&#39;</span><span class="p">))</span>
+
+<span class="c1">#make a table for display</span>
+<span class="n">nicetable</span><span class="o">=</span><span class="n">arr</span><span class="p">[</span><span class="n">addto</span><span class="p">]</span>
+<span class="n">drop</span> <span class="o">=</span> <span class="n">nicetable</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">droplevel</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">nicetable</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">drop</span>
+<span class="c1">#nicetable.reset_index(inplace=True)</span>
+<span class="c1">#nicetable.set_index(&#39;arch&#39;)</span>
+<span class="n">newindex</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;i5&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)]</span>
+<span class="n">newindex</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;gtx1060&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">newindex</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;titanXp&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;skl&#39;</span><span class="p">,</span><span class="s1">&#39;knl&#39;</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]:</span>
+        <span class="n">newindex</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;p100&#39;</span><span class="p">,</span><span class="s1">&#39;v100&#39;</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]:</span>
+        <span class="n">newindex</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">))</span>
+    
+<span class="n">nicetable</span><span class="o">=</span><span class="n">nicetable</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">newindex</span><span class="p">)</span>
+
+<span class="n">nicetable</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2" halign="left">axpby</th>
+      <th colspan="2" halign="left">dot</th>
+      <th colspan="2" halign="left">dxdy2</th>
+      <th colspan="2" halign="left">dxdy3</th>
+      <th colspan="2" halign="left">dxdy4</th>
+      <th colspan="2" halign="left">dxdy5</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>lat</th>
+      <th>bw</th>
+      <th>lat</th>
+      <th>bw</th>
+      <th>lat</th>
+      <th>bw</th>
+      <th>lat</th>
+      <th>bw</th>
+      <th>lat</th>
+      <th>bw</th>
+      <th>lat</th>
+      <th>bw</th>
+    </tr>
+    <tr>
+      <th>arch</th>
+      <th>nodes</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>i5</th>
+      <th>1</th>
+      <td>00 ± 02</td>
+      <td>30 ± 01</td>
+      <td>05 ± 01</td>
+      <td>10 ± 01</td>
+      <td>00 ± 02</td>
+      <td>28 ± 03</td>
+      <td>00 ± 04</td>
+      <td>30 ± 03</td>
+      <td>00 ± 13</td>
+      <td>26 ± 02</td>
+      <td>00 ± 02</td>
+      <td>22 ± 02</td>
+    </tr>
+    <tr>
+      <th>gtx1060</th>
+      <th>1</th>
+      <td>00 ± 01</td>
+      <td>158 ± 01</td>
+      <td>93 ± 09</td>
+      <td>27 ± 01</td>
+      <td>00 ± 01</td>
+      <td>131 ± 01</td>
+      <td>03 ± 01</td>
+      <td>112 ± 02</td>
+      <td>00 ± 01</td>
+      <td>84 ± 14</td>
+      <td>00 ± 01</td>
+      <td>70 ± 18</td>
+    </tr>
+    <tr>
+      <th>titanXp</th>
+      <th>1</th>
+      <td>00 ± 01</td>
+      <td>432 ± 04</td>
+      <td>45 ± 06</td>
+      <td>62 ± 01</td>
+      <td>03 ± 01</td>
+      <td>373 ± 05</td>
+      <td>02 ± 01</td>
+      <td>309 ± 10</td>
+      <td>04 ± 01</td>
+      <td>247 ± 08</td>
+      <td>00 ± 02</td>
+      <td>198 ± 32</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">skl</th>
+      <th>1</th>
+      <td>00 ± 01</td>
+      <td>207 ± 06</td>
+      <td>18 ± 03</td>
+      <td>193 ± 19</td>
+      <td>23 ± 03</td>
+      <td>182 ± 36</td>
+      <td>17 ± 01</td>
+      <td>162 ± 13</td>
+      <td>16 ± 02</td>
+      <td>119 ± 19</td>
+      <td>21 ± 03</td>
+      <td>111 ± 09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00 ± 01</td>
+      <td>217 ± 08</td>
+      <td>23 ± 01</td>
+      <td>183 ± 12</td>
+      <td>30 ± 03</td>
+      <td>175 ± 45</td>
+      <td>31 ± 03</td>
+      <td>158 ± 17</td>
+      <td>31 ± 01</td>
+      <td>121 ± 21</td>
+      <td>35 ± 01</td>
+      <td>115 ± 08</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00 ± 01</td>
+      <td>233 ± 16</td>
+      <td>38 ± 05</td>
+      <td>167 ± 24</td>
+      <td>29 ± 03</td>
+      <td>168 ± 44</td>
+      <td>30 ± 02</td>
+      <td>160 ± 08</td>
+      <td>30 ± 02</td>
+      <td>115 ± 25</td>
+      <td>34 ± 03</td>
+      <td>111 ± 10</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">knl</th>
+      <th>1</th>
+      <td>06 ± 01</td>
+      <td>394 ± 23</td>
+      <td>55 ± 02</td>
+      <td>142 ± 07</td>
+      <td>10 ± 01</td>
+      <td>240 ± 18</td>
+      <td>08 ± 02</td>
+      <td>173 ± 27</td>
+      <td>00 ± 02</td>
+      <td>127 ± 19</td>
+      <td>00 ± 38</td>
+      <td>102 ± 15</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>08 ± 01</td>
+      <td>421 ± 41</td>
+      <td>87 ± 02</td>
+      <td>129 ± 03</td>
+      <td>49 ± 01</td>
+      <td>176 ± 28</td>
+      <td>56 ± 03</td>
+      <td>142 ± 23</td>
+      <td>60 ± 02</td>
+      <td>110 ± 15</td>
+      <td>72 ± 09</td>
+      <td>89 ± 08</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10 ± 01</td>
+      <td>421 ± 44</td>
+      <td>120 ± 06</td>
+      <td>110 ± 04</td>
+      <td>53 ± 04</td>
+      <td>156 ± 25</td>
+      <td>59 ± 04</td>
+      <td>128 ± 24</td>
+      <td>68 ± 06</td>
+      <td>116 ± 22</td>
+      <td>77 ± 07</td>
+      <td>90 ± 14</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">p100</th>
+      <th>1</th>
+      <td>08 ± 01</td>
+      <td>551 ± 02</td>
+      <td>51 ± 08</td>
+      <td>376 ± 02</td>
+      <td>27 ± 01</td>
+      <td>294 ± 08</td>
+      <td>09 ± 02</td>
+      <td>239 ± 13</td>
+      <td>18 ± 03</td>
+      <td>209 ± 08</td>
+      <td>15 ± 06</td>
+      <td>172 ± 18</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00 ± 01</td>
+      <td>554 ± 01</td>
+      <td>51 ± 09</td>
+      <td>370 ± 03</td>
+      <td>51 ± 06</td>
+      <td>257 ± 19</td>
+      <td>51 ± 05</td>
+      <td>223 ± 17</td>
+      <td>50 ± 04</td>
+      <td>193 ± 17</td>
+      <td>51 ± 06</td>
+      <td>167 ± 15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00 ± 01</td>
+      <td>555 ± 01</td>
+      <td>52 ± 01</td>
+      <td>357 ± 06</td>
+      <td>55 ± 01</td>
+      <td>240 ± 12</td>
+      <td>57 ± 02</td>
+      <td>200 ± 26</td>
+      <td>61 ± 03</td>
+      <td>186 ± 16</td>
+      <td>75 ± 02</td>
+      <td>161 ± 17</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">v100</th>
+      <th>1</th>
+      <td>01 ± 01</td>
+      <td>847 ± 01</td>
+      <td>89 ± 05</td>
+      <td>611 ± 06</td>
+      <td>05 ± 01</td>
+      <td>795 ± 21</td>
+      <td>03 ± 01</td>
+      <td>736 ± 34</td>
+      <td>03 ± 01</td>
+      <td>697 ± 16</td>
+      <td>07 ± 01</td>
+      <td>590 ± 66</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00 ± 01</td>
+      <td>847 ± 02</td>
+      <td>99 ± 05</td>
+      <td>579 ± 13</td>
+      <td>32 ± 01</td>
+      <td>703 ± 59</td>
+      <td>34 ± 01</td>
+      <td>689 ± 48</td>
+      <td>32 ± 01</td>
+      <td>642 ± 55</td>
+      <td>31 ± 01</td>
+      <td>568 ± 47</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00 ± 01</td>
+      <td>842 ± 04</td>
+      <td>98 ± 01</td>
+      <td>527 ± 17</td>
+      <td>38 ± 01</td>
+      <td>678 ± 37</td>
+      <td>38 ± 04</td>
+      <td>627 ± 84</td>
+      <td>37 ± 03</td>
+      <td>641 ± 47</td>
+      <td>36 ± 02</td>
+      <td>557 ± 57</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;i5&#39;</span><span class="p">,</span><span class="s1">&#39;gtx1060&#39;</span><span class="p">,</span><span class="s1">&#39;skl&#39;</span><span class="p">,</span><span class="s1">&#39;knl&#39;</span><span class="p">,</span><span class="s1">&#39;p100&#39;</span><span class="p">,</span><span class="s1">&#39;titanXp&#39;</span><span class="p">,</span><span class="s1">&#39;v100&#39;</span><span class="p">]</span>  
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">arch</span> <span class="ow">in</span>  <span class="n">index</span><span class="p">:</span> 
+    <span class="n">line</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arch</span><span class="p">)</span>
+    <span class="c1">#first the bandwidths</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy3&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy4&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy5&#39;</span><span class="p">]:</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;avg&#39;</span><span class="p">)]</span> <span class="p">)</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)])</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">]</span> <span class="p">:</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">)]</span> <span class="p">)</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)])</span>
+        <span class="k">if</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;i5&#39;</span> <span class="ow">or</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;gtx1060&#39;</span> <span class="ow">or</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;titanXp&#39;</span><span class="p">:</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">)]</span> <span class="p">)</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span> <span class="p">)</span>
+    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    
+<span class="n">tuples</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;arch&#39;</span><span class="p">]</span>     
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy3&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy4&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy5&#39;</span><span class="p">]:</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_bw&#39;</span><span class="p">)</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_bw_err&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy&#39;</span><span class="p">]:</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_lat_shared&#39;</span><span class="p">)</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_lat_shared_err&#39;</span><span class="p">)</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_lat_dist&#39;</span><span class="p">)</span>
+    <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="s1">&#39;_lat_dist_err&#39;</span><span class="p">)</span>
+<span class="n">cols</span><span class="o">=</span><span class="n">tuples</span>
+<span class="n">toDisk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>
+<span class="n">toDisk</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;performance.csv&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;performance.csv&#39;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>arch</th>
+      <th>axpby_bw</th>
+      <th>axpby_bw_err</th>
+      <th>dot_bw</th>
+      <th>dot_bw_err</th>
+      <th>dxdy2_bw</th>
+      <th>dxdy2_bw_err</th>
+      <th>dxdy3_bw</th>
+      <th>dxdy3_bw_err</th>
+      <th>dxdy4_bw</th>
+      <th>...</th>
+      <th>axpby_lat_dist</th>
+      <th>axpby_lat_dist_err</th>
+      <th>dot_lat_shared</th>
+      <th>dot_lat_shared_err</th>
+      <th>dot_lat_dist</th>
+      <th>dot_lat_dist_err</th>
+      <th>dxdy_lat_shared</th>
+      <th>dxdy_lat_shared_err</th>
+      <th>dxdy_lat_dist</th>
+      <th>dxdy_lat_dist_err</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>i5</td>
+      <td>29.99</td>
+      <td>0.19</td>
+      <td>9.31</td>
+      <td>0.04</td>
+      <td>27.79</td>
+      <td>2.97</td>
+      <td>29.12</td>
+      <td>2.84</td>
+      <td>25.58</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.76</td>
+      <td>0.23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>1.44</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>gtx1060</td>
+      <td>157.05</td>
+      <td>0.06</td>
+      <td>26.50</td>
+      <td>0.10</td>
+      <td>130.63</td>
+      <td>0.40</td>
+      <td>111.23</td>
+      <td>1.11</td>
+      <td>83.82</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>92.06</td>
+      <td>8.70</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.82</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>skl</td>
+      <td>206.71</td>
+      <td>5.87</td>
+      <td>192.05</td>
+      <td>18.31</td>
+      <td>181.56</td>
+      <td>35.38</td>
+      <td>161.75</td>
+      <td>13.00</td>
+      <td>118.06</td>
+      <td>...</td>
+      <td>0.00</td>
+      <td>0.26</td>
+      <td>17.28</td>
+      <td>2.32</td>
+      <td>37.93</td>
+      <td>4.14</td>
+      <td>22.70</td>
+      <td>2.11</td>
+      <td>28.52</td>
+      <td>2.10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>knl</td>
+      <td>393.15</td>
+      <td>22.19</td>
+      <td>141.36</td>
+      <td>6.63</td>
+      <td>239.04</td>
+      <td>17.02</td>
+      <td>172.69</td>
+      <td>26.80</td>
+      <td>126.04</td>
+      <td>...</td>
+      <td>9.16</td>
+      <td>0.09</td>
+      <td>54.83</td>
+      <td>1.79</td>
+      <td>119.59</td>
+      <td>5.14</td>
+      <td>9.93</td>
+      <td>0.70</td>
+      <td>52.67</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>p100</td>
+      <td>550.51</td>
+      <td>1.23</td>
+      <td>375.61</td>
+      <td>1.94</td>
+      <td>293.25</td>
+      <td>7.11</td>
+      <td>238.99</td>
+      <td>12.63</td>
+      <td>208.44</td>
+      <td>...</td>
+      <td>0.00</td>
+      <td>0.27</td>
+      <td>50.89</td>
+      <td>7.06</td>
+      <td>51.67</td>
+      <td>0.59</td>
+      <td>26.23</td>
+      <td>0.05</td>
+      <td>54.40</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>titanXp</td>
+      <td>431.24</td>
+      <td>3.45</td>
+      <td>61.37</td>
+      <td>0.12</td>
+      <td>372.85</td>
+      <td>4.16</td>
+      <td>308.92</td>
+      <td>9.47</td>
+      <td>246.73</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>44.37</td>
+      <td>5.15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.38</td>
+      <td>0.57</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>v100</td>
+      <td>846.42</td>
+      <td>0.95</td>
+      <td>610.15</td>
+      <td>5.99</td>
+      <td>794.43</td>
+      <td>20.52</td>
+      <td>735.42</td>
+      <td>33.02</td>
+      <td>696.49</td>
+      <td>...</td>
+      <td>0.00</td>
+      <td>0.31</td>
+      <td>88.49</td>
+      <td>4.68</td>
+      <td>97.58</td>
+      <td>0.79</td>
+      <td>4.20</td>
+      <td>0.02</td>
+      <td>37.19</td>
+      <td>0.42</td>
+    </tr>
+  </tbody>
+</table>
+<p>7 rows × 25 columns</p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="observations">
+<h2>Observations<a class="headerlink" href="#observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>note the high latency in the knl MPI implementation of dxdy. It seems to suffer from the same problem as the GPUs. (Is this the speed of PCIe we see?)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#index = [&#39;i5&#39;,&#39;gtx1060&#39;,&#39;titanXp&#39;, &#39;skl&#39;,&#39;knl&#39;,&#39;p100&#39;,&#39;v100&#39;]  </span>
+
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">arch</span> <span class="ow">in</span>  <span class="n">index</span><span class="p">:</span> 
+    <span class="n">line</span> <span class="o">=</span> <span class="p">[]</span>        
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy3&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy4&#39;</span><span class="p">,</span><span class="s1">&#39;dxdy5&#39;</span><span class="p">]:</span>
+        <span class="n">bw</span>  <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;avg&#39;</span><span class="p">)]</span>
+        <span class="n">bw_err</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;bw&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span>
+        <span class="n">lat1</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">)]</span>
+        <span class="n">lat1_err</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">toString</span><span class="p">(</span> <span class="n">bw</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; $\pm$ &quot;</span><span class="o">+</span><span class="n">toString</span><span class="p">(</span><span class="n">bw_err</span><span class="p">))</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">toString</span><span class="p">(</span> <span class="n">lat1</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; $\pm$ &quot;</span><span class="o">+</span><span class="n">toString</span><span class="p">(</span><span class="n">lat1_err</span><span class="p">)</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;i5&#39;</span> <span class="ow">or</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;gtx1060&#39;</span> <span class="ow">or</span> <span class="n">arch</span> <span class="o">==</span> <span class="s1">&#39;titanXp&#39;</span><span class="p">:</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">toString</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="s1">&#39;dot&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="s1">&#39;axpby&#39;</span><span class="p">):</span>
+                <span class="n">lat4</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">)]</span>
+                <span class="n">lat4_err</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lat4</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;corr&#39;</span><span class="p">)]</span>
+                <span class="n">lat4_err</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">arch</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="s1">&#39;dxdy2&#39;</span><span class="p">,</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="s1">&#39;std&#39;</span><span class="p">)]</span>  
+            <span class="n">line</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">toString</span><span class="p">(</span> <span class="n">lat4</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; $\pm$ &quot;</span><span class="o">+</span><span class="n">toString</span><span class="p">(</span><span class="n">lat4_err</span><span class="p">))</span>
+
+                
+    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    
+<span class="n">tuples</span><span class="o">=</span><span class="p">[]</span>  
+
+
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=2)&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=3)&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=4)&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=5)&#39;</span><span class="p">]:</span>
+    <span class="c1">#for q in [&#39;efficiency [\% bw]&#39;,&#39;lat s [us]&#39;,&#39;lat d [us]&#39;]:</span>
+    <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">,</span><span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(1)$ [$\mu$s]&#39;</span><span class="p">,</span><span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(4)$ [$\mu$s]&#39;</span><span class="p">]:</span>
+        <span class="n">tuples</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">))</span>
+<span class="n">tuples</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;axpby&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">)</span>
+    
+
+<span class="n">cols</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
+
+<span class="n">toDisk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>
+<span class="n">theo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">34</span><span class="p">,</span><span class="mi">192</span><span class="p">,</span><span class="mi">256</span><span class="p">,</span><span class="s1">&#39;&gt;400&#39;</span><span class="p">,</span><span class="mi">732</span><span class="p">,</span><span class="mi">547</span><span class="p">,</span><span class="mi">898</span><span class="p">]</span>
+<span class="n">toDisk</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,(</span><span class="s1">&#39;peak&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">),</span><span class="n">theo</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.0f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">filename</span><span class="o">=</span><span class="s1">&#39;axpby-dot.tex&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">toDisk</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">to_latex</span><span class="p">(</span>
+        <span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">column_format</span><span class="o">=</span><span class="s1">&#39;@</span><span class="si">{}</span><span class="s1">lp</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.2cm}</span><span class="s1">p</span><span class="si">{1.2cm}</span><span class="s1">p</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.2cm}</span><span class="s1">p</span><span class="si">{1.4cm}</span><span class="s1">@</span><span class="si">{}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">bold_rows</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">))</span>
+<span class="n">toDisk</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>peak</th>
+      <th colspan="3" halign="left">axpby</th>
+      <th colspan="3" halign="left">dot</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>bandwidth [GB/s]</th>
+      <th>bandwidth [GB/s]</th>
+      <th>$T_{lat}(1)$ [$\mu$s]</th>
+      <th>$T_{lat}(4)$ [$\mu$s]</th>
+      <th>bandwidth [GB/s]</th>
+      <th>$T_{lat}(1)$ [$\mu$s]</th>
+      <th>$T_{lat}(4)$ [$\mu$s]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>i5</th>
+      <td>34</td>
+      <td>30 $\pm$ 01</td>
+      <td>00 $\pm$ 02</td>
+      <td>n/a</td>
+      <td>10 $\pm$ 01</td>
+      <td>05 $\pm$ 01</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>gtx1060</th>
+      <td>192</td>
+      <td>158 $\pm$ 01</td>
+      <td>00 $\pm$ 01</td>
+      <td>n/a</td>
+      <td>27 $\pm$ 01</td>
+      <td>93 $\pm$ 09</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>skl</th>
+      <td>256</td>
+      <td>207 $\pm$ 06</td>
+      <td>00 $\pm$ 01</td>
+      <td>00 $\pm$ 01</td>
+      <td>193 $\pm$ 19</td>
+      <td>18 $\pm$ 03</td>
+      <td>38 $\pm$ 05</td>
+    </tr>
+    <tr>
+      <th>knl</th>
+      <td>&gt;400</td>
+      <td>394 $\pm$ 23</td>
+      <td>06 $\pm$ 01</td>
+      <td>10 $\pm$ 01</td>
+      <td>142 $\pm$ 07</td>
+      <td>55 $\pm$ 02</td>
+      <td>120 $\pm$ 06</td>
+    </tr>
+    <tr>
+      <th>p100</th>
+      <td>732</td>
+      <td>551 $\pm$ 02</td>
+      <td>08 $\pm$ 01</td>
+      <td>00 $\pm$ 01</td>
+      <td>376 $\pm$ 02</td>
+      <td>51 $\pm$ 08</td>
+      <td>52 $\pm$ 01</td>
+    </tr>
+    <tr>
+      <th>titanXp</th>
+      <td>547</td>
+      <td>432 $\pm$ 04</td>
+      <td>00 $\pm$ 01</td>
+      <td>n/a</td>
+      <td>62 $\pm$ 01</td>
+      <td>45 $\pm$ 06</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>v100</th>
+      <td>898</td>
+      <td>847 $\pm$ 01</td>
+      <td>01 $\pm$ 01</td>
+      <td>00 $\pm$ 01</td>
+      <td>611 $\pm$ 06</td>
+      <td>89 $\pm$ 05</td>
+      <td>98 $\pm$ 01</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dxdy</span> <span class="o">=</span> <span class="n">toDisk</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[(</span><span class="s1">&#39;B(P=2)&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">&#39;B(P=3)&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">&#39;B(P=4)&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">&#39;B(P=5)&#39;</span><span class="p">,</span><span class="s1">&#39;bandwidth [GB/s]&#39;</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">&#39;B(P=2)&#39;</span><span class="p">,</span><span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(1)$ [$\mu$s]&#39;</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">&#39;B(P=2)&#39;</span><span class="p">,</span><span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(4)$ [$\mu$s]&#39;</span><span class="p">),</span>
+                    <span class="p">]]</span>
+<span class="n">dxdy</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;B(P=2) [GB/s]&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=3) [GB/s]&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=4) [GB/s]&#39;</span><span class="p">,</span><span class="s1">&#39;B(P=5) [GB/s]&#39;</span><span class="p">,</span>
+                         <span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(1)$ [$\mu$s]&#39;</span><span class="p">,</span><span class="s1">&#39;$T_</span><span class="si">{lat}</span><span class="s1">(4)$ [$\mu$s]&#39;</span><span class="p">]</span>
+
+<span class="n">filename</span><span class="o">=</span><span class="s1">&#39;dxdy.tex&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">dxdy</span><span class="o">.</span><span class="n">to_latex</span><span class="p">(</span>
+        <span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">column_format</span><span class="o">=</span><span class="s1">&#39;lp</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.5cm}</span><span class="s1">p</span><span class="si">{1.2cm}</span><span class="s1">p</span><span class="si">{1.2cm}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">bold_rows</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">))</span>
+<span class="n">dxdy</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>B(P=2) [GB/s]</th>
+      <th>B(P=3) [GB/s]</th>
+      <th>B(P=4) [GB/s]</th>
+      <th>B(P=5) [GB/s]</th>
+      <th>$T_{lat}(1)$ [$\mu$s]</th>
+      <th>$T_{lat}(4)$ [$\mu$s]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>i5</th>
+      <td>28 $\pm$ 03</td>
+      <td>30 $\pm$ 03</td>
+      <td>26 $\pm$ 02</td>
+      <td>22 $\pm$ 02</td>
+      <td>00 $\pm$ 02</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>gtx1060</th>
+      <td>131 $\pm$ 01</td>
+      <td>112 $\pm$ 02</td>
+      <td>84 $\pm$ 14</td>
+      <td>70 $\pm$ 18</td>
+      <td>00 $\pm$ 01</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>skl</th>
+      <td>182 $\pm$ 36</td>
+      <td>162 $\pm$ 13</td>
+      <td>119 $\pm$ 19</td>
+      <td>111 $\pm$ 09</td>
+      <td>23 $\pm$ 03</td>
+      <td>29 $\pm$ 03</td>
+    </tr>
+    <tr>
+      <th>knl</th>
+      <td>240 $\pm$ 18</td>
+      <td>173 $\pm$ 27</td>
+      <td>127 $\pm$ 19</td>
+      <td>102 $\pm$ 15</td>
+      <td>10 $\pm$ 01</td>
+      <td>53 $\pm$ 04</td>
+    </tr>
+    <tr>
+      <th>p100</th>
+      <td>294 $\pm$ 08</td>
+      <td>239 $\pm$ 13</td>
+      <td>209 $\pm$ 08</td>
+      <td>172 $\pm$ 18</td>
+      <td>27 $\pm$ 01</td>
+      <td>55 $\pm$ 01</td>
+    </tr>
+    <tr>
+      <th>titanXp</th>
+      <td>373 $\pm$ 05</td>
+      <td>309 $\pm$ 10</td>
+      <td>247 $\pm$ 08</td>
+      <td>198 $\pm$ 32</td>
+      <td>03 $\pm$ 01</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>v100</th>
+      <td>795 $\pm$ 21</td>
+      <td>736 $\pm$ 34</td>
+      <td>697 $\pm$ 16</td>
+      <td>590 $\pm$ 66</td>
+      <td>05 $\pm$ 01</td>
+      <td>38 $\pm$ 01</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="3-Dx-Dy-Plot.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Analysis of the dx and dy routines</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="5-prediction.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">A test of the performance prediction model</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Matthias Wiesenberger<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
